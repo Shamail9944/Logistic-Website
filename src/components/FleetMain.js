@@ -6,10 +6,10 @@ import { LuBoxes } from 'react-icons/lu'
 
 export default function FleetMain() {
   return (
-    <div className='bg-[#FFFFFF]'>
+    <div className='bg-[#FFFFFF] w-full'>
 
 
-      <div className='bg-[#CCCCCC] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'
+      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-4 py-4 lg:py-8'
       // style={{
       //   backgroundImage: `url(/network-banner.jpg)`,
       //   backgroundSize: "cover",
@@ -18,7 +18,7 @@ export default function FleetMain() {
       //   height: "100vh"
       // }}
       >
-        <div className='flex flex-col max-w-4xl text-black'>
+        <div className='justify-start'>
           <h2 className='font-bold'>FLEET</h2>
           <p>From small vans to long wheel based - we have the fleet to meet your needs</p>
         </div>
@@ -29,7 +29,7 @@ export default function FleetMain() {
       <div className='bg-[#DBE0D8] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'>
         <h1 className='font-bold text-2xl'>DIFFERENT TYPES OF VEHICLES</h1>
 
-        <div className=' flex flex-col md:flex-row gap-x-12 mt-6 max-w-4xl text-center'>
+        <div className=' flex flex-col md:flex-row gap-x-12 mt-6 max-w-5xl text-center'>
 
           <div className='lg:flex-1 text-xs flex flex-col items-center'>
             <Image
@@ -71,7 +71,7 @@ export default function FleetMain() {
 
         </div>
 
-        <div className=' flex flex-col md:flex-row gap-x-4 mt-6 max-w-4xl'>
+        <div className=' flex flex-col md:flex-row gap-x-4 mt-6 max-w-5xl'>
 
           <div className='lg:flex-1 text-xs flex flex-col items-center'>
             <Image
