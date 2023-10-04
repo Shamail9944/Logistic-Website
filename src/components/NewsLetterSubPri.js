@@ -1,4 +1,5 @@
 
+import Link from 'next/link'
 import React from 'react'
 
 export default function NewsLetterSubPri() {
@@ -9,7 +10,13 @@ export default function NewsLetterSubPri() {
         <p className='text-center'>Enter your Email & be the first to know about our company updates!</p>
 
         <div>
-          
+        <div className='flex justify-center pt-4'>
+        <Link href="/quotation">
+          <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-sm text-white'>
+            SUBSCRIBE
+          </button>
+        </Link>
+      </div>
         </div>
       </div>
     </div>

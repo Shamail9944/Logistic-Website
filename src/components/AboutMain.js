@@ -1,5 +1,9 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
+import { FaTruck } from 'react-icons/fa'
+import { BiBarcodeReader } from 'react-icons/bi'
+import { LuNetwork } from 'react-icons/lu'
 
 export default function AboutMain() {
   return (
@@ -46,8 +50,79 @@ export default function AboutMain() {
       <div className='bg-[#DBE0D8] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'>
 
         <h3 className="font-bold mb-5">LEARN MORE ABOUT OUR BUSINESS</h3>
-        <div className='flex flex-col md:flexrow'>
-          <div></div>
+        <div className='flex flex-col md:flex-row '>
+          <div className='bg-[#e13f3f] flex items-center justify-center w-[350px] h-[400px] overflow-hidden'
+            style={{
+              backgroundImage: `url('/services.jpg')`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              width: "350px",
+              height: "400px",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+          >
+            <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12">
+              <div className='font-bold text-9xl text-yellow-500 mb-5'><BiBarcodeReader /></div>
+              <h2 className='text-white font-bold text-3xl mb-5'>Services</h2>
+              <p className='text-white text-md text-center mb-3'>We offer a bespoke courier service that meets your business demands</p>
+              <Link href="/services">
+                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md text-white tracking-widest'>
+                  LEARN MORE
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className='bg-[#e13f3f] flex items-center justify-center w-[350px] h-[400px] overflow-hidden'
+            style={{
+              backgroundImage: `url('/fleet.jpg')`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              width: "350px",
+              height: "400px",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+          >
+            <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12">
+              <div className='font-bold text-9xl text-yellow-500 mb-5'><FaTruck /></div>
+              <h2 className='text-white font-bold text-3xl mb-5'>FLEET</h2>
+              <p className='text-white text-md text-center mb-3'>From small vans to long wheel based – we have the fleet to meet your needs</p>
+              <Link href="/fleet">
+                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md text-white tracking-widest'>
+                  LEARN MORE
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className='bg-[#e13f3f] flex items-center justify-center w-[350px] h-[400px] overflow-hidden'
+            style={{
+              backgroundImage: `url('/network.jpg')`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              width: "350px",
+              height: "400px",
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+          >
+            <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12">
+              <div className='font-bold text-9xl text-yellow-500 mb-5'><LuNetwork /></div>
+              <h2 className='text-white font-bold text-3xl mb-5'>NETWORK</h2>
+              <p className='text-white text-md text-center mb-3'>Our success is based on a strong relationship with our logistic partners</p>
+              <Link href="/network">
+                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md text-white tracking-widest'>
+                  LEARN MORE
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>
