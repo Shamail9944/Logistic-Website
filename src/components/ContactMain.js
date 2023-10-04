@@ -32,6 +32,9 @@ export default function ContactMain() {
           <div className='lg:flex-1 text-xs flex flex-col items-center'>
             <h2 className='font-bold'>CONTACT BY EMAIL</h2>
             <p>If you have a general query about our business services, simply complete the form below and we will endeavour to respond within 1 business working day.</p>
+
+            <form action="">form</form>
+
           </div>
 
           <div className='lg:flex-1 text-xs flex flex-col items-center'>
