@@ -2,16 +2,16 @@ import IndustryNews from '@/components/IndustryNews'
 import PromoVid from '@/components/PromoVid'
 import SliderHome from '@/components/SliderHome'
 import SpecialitySection from '@/components/SpecialitySection'
-import Image from 'next/image'
 
 export default function Home() {
+
   return (
-    <main className="flex  flex-col items-center">
-      <div className="max-w-8xl w-full items-center justify-between">
+    <main className="flex  flex-col items-center" >
+      <div className="max-w-8xl w-full items-center justify-between"  >
         <SliderHome />
         <SpecialitySection />
         <PromoVid />
-        <IndustryNews/>
+        <IndustryNews />
       </div>
     </main>
   )

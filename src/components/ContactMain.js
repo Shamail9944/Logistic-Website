@@ -4,6 +4,8 @@ import React from 'react'
 import { BiLogoTwitter } from 'react-icons/bi'
 
 export default function ContactMain() {
+
+
   return (
     <div className='bg-[#FFFFFF] w-full'>
 
@@ -33,7 +35,7 @@ export default function ContactMain() {
             <h2 className='font-bold'>CONTACT BY EMAIL</h2>
             <p>If you have a general query about our business services, simply complete the form below and we will endeavour to respond within 1 business working day.</p>
 
-            <form action="">form</form>
+
 
           </div>
 
