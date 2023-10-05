@@ -34,21 +34,23 @@ export default function SliderHome() {
     ),
   }
   return (
-    <div className="slide-container">
-      <Zoom {...zoomInProperties}>
-        {images.map((each, index) =>
-          <div key={index} className='flex justify-center md:items-center items-start w-screen h-96 relative'>
-            {/* <img className="w-screen" src={each} alt="slider" /> */}
-            <Image
-              src={each}
-              layout="fill" // required
-              objectFit="cover" // change to suit your needs
-              alt="slider"
-              className='w-screen'
-            />
-          </div>
-        )}
-      </Zoom>
+    <div className="w-full">
+
+      <div className="slide-container">
+        <Zoom {...zoomInProperties}>
+          {images.map((each, index) =>
+            <div key={index} className='flex justify-center md:items-center items-start w-screen h-[60vh] relative'>
+              <Image
+                src={each}
+                layout="fill"
+                objectFit="cover" // change to suit your needs
+                alt="slider"
+                className='w-screen'
+              />
+            </div>
+          )}
+        </Zoom>
+      </div>
     </div>
   )
 }

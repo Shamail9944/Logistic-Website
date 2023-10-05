@@ -8,7 +8,7 @@ import { TfiYoutube } from 'react-icons/tfi'
 
 export default function MiniHeaderPri() {
   return (
-    <div className='w-full bg-[#6C0287]'>
+    <div className='hidden md:block w-full bg-[#6C0287]'>
       <div className="mx-auto max-w-6xl flex items-center px-6 lg:px-4 py-1 lg:py-2 justify-between text-white">
         <div className='flex gap-x-5'>
           <div className="flex flex-row gap-x-2 ">

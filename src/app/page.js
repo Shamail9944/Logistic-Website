@@ -6,12 +6,14 @@ import SpecialitySection from '@/components/SpecialitySection'
 export default function Home() {
 
   return (
-    <main className="flex  flex-col items-center" >
-      <div className="max-w-8xl w-full items-center justify-between"  >
-        <SliderHome />
-        <SpecialitySection />
-        <PromoVid />
-        <IndustryNews />
+    <main className="w-full " >
+      <div className="w-full flex flex-col items-center justify-between"  >
+        <div className="w-full items-center justify-between"  >
+          <SliderHome />
+          <SpecialitySection />
+          <PromoVid />
+          <IndustryNews />
+        </div>
       </div>
     </main>
   )
