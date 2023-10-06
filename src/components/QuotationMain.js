@@ -1,7 +1,64 @@
-
+'use client'
 import React from 'react'
+import { useForm } from 'react-hook-form'
+import { useState } from 'react';
+// import { useRouter } from 'next/router'
+import { toast } from 'react-toastify';
+
 
 export default function QuotationMain() {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [collectionPostcode, setCollectionPostcode] = useState("");
+  const [dileveryPostcode, setDileveryPostcode] = useState("");
+  const [parcelDetail, setParcelDetail] = useState("");
+  const [code, setCode] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const sendMail = async (e) => {
+    e.preventDefault();
+    const response = await fetch("/api/email", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ name, email, phone, collectionPostcode, dileveryPostcode, parcelDetail, code }),
+    })
+    console.log(await response.json())
+    // const data = await response.json()
+    // await response.json()
+    // .then((response) => {
+    //   if (response.ok) {
+    //     toast.success('Email Sent Successfully.', {
+    //       position: "top-right",
+    //       autoClose: 5000,
+    //       hideProgressBar: false,
+    //       closeOnClick: true,
+    //       pauseOnHover: true,
+    //       draggable: true,
+    //       progress: undefined,
+    //       theme: "colored",
+    //     });
+    //   }
+    //   if (!response.ok) {
+    //     toast.error('Failed to send Email. Try again, please.', {
+    //       position: "top-right",
+    //       autoClose: 5000,
+    //       hideProgressBar: false,
+    //       closeOnClick: true,
+    //       pauseOnHover: true,
+    //       draggable: true,
+    //       progress: undefined,
+    //       theme: "colored",
+    //     });
+    //   }
+    //   // router.push('/')
+    //   // return
+    // })
+
+  }
+  // const router = useRouter();
+
   return (
     <div className='bg-[#FFFFFF] w-full'>
 
@@ -12,9 +69,109 @@ export default function QuotationMain() {
         </div>
       </div>
 
-      <div className='bg-[#CCCCCC] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'>
-        <div className=' flex flex-col md:flex-row gap-x-4 mt-6 max-w-5xl'>
+      <div className='bg-[#DBE0D8] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'>
+        <div className=' flex flex-col gap-x-4 mt-6 max-w-5xl'>
           <p>In order to receive a quotation you must complete the form fields below. Once you have completed the form simply click the submit button. An automated email will be sent with your form submission and one of our agents will contact you within 1 business working day with a quotation for your shipment requirements.</p>
+
+
+
+          <div className='border-2 border-solid border-[#FDAF17] px-6 py-4 rounded-lg my-4'>
+            <form className='flex flex-col gap-1 w-full mx-auto'
+              onSubmit={sendMail}>
+              <div className=''>
+                <h2 className='text-2xl font-semibold'>QUICK QUOTE</h2>
+              </div>
+              <div className='bg-[#FDAF17] h-1'></div>
+
+              <input
+                name='name'
+                id='name'
+                type="text"
+                placeholder='Full Name'
+                className='input mt-4 p-2 rounded-lg'
+                required
+                value={name}
+                onChange={(e) => { setName(e.target.value); }} />
+
+              <input
+                name='email'
+                id='email'
+                type="text"
+                placeholder='Email'
+                className='input mt-4 p-2 rounded-lg'
+                required
+                value={email}
+                onChange={(e) => { setEmail(e.target.value); }} />
+
+              <input
+                name='phone'
+                id='phone'
+                type="number"
+                placeholder='Phone'
+                className='input mt-4 p-2 rounded-lg'
+                required
+                value={phone}
+                onChange={(e) => { setPhone(e.target.value); }} />
+
+              <input
+                name='collection-postcode'
+                id='collection-postcode'
+                type="text"
+                placeholder='Collection Postcode'
+                className='input mt-4 p-2 rounded-lg'
+                value={collectionPostcode}
+                onChange={(e) => { setCollectionPostcode(e.target.value); }} />
+
+              <input
+                name='dilevery-postcode'
+                id='dilevery-postcode'
+                type="text"
+                placeholder='Dilevery Postcode'
+                className='input mt-4 p-2 rounded-lg'
+                value={dileveryPostcode}
+                onChange={(e) => { setDileveryPostcode(e.target.value); }} />
+
+              <textarea
+                name='Parcel-Detail'
+                id='message'
+                type="text"
+                rows={10}
+                placeholder='Parcel-Detail'
+                className="textarea mt-4 p-2 rounded-lg"
+                required
+                value={parcelDetail}
+                onChange={(e) => { setParcelDetail(e.target.value); }}
+              ></textarea>
+              <p>Please provide parcel details for example: Parcel 1: Length: 1000mm, Width: 500mm, Height: 400mm, Weight: 3kg, Parcel 2: ...</p>
+
+
+              <div>
+                <h2 className='text-2xl font-semibold mt-12'>Verification Code</h2>
+                <div className='bg-[#FDAF17] '></div>
+                <div className='flex flex-row justify-between w-full'>
+                  <input
+                    name='code'
+                    id='code'
+                    type="number"
+                    placeholder='2-Digit Code'
+                    className='input mt-4 p-2 rounded-lg'
+                    required
+                    value={code}
+                    onChange={(e) => { setCode(e.target.value); }} />
+
+                  <button
+                    className='btn rounded-full border font-bold bg-[#FDAF17] max-w-[170px] px-8 mt-5  flex items-center justify-center overflow-hidden hover:border-accent group'
+                    type="submit">
+
+                    <span className='group:hover:-translate-y-[120%] group:hover:opacity-0 transition-all duration-500'>Submit</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+
 
 
         </div>

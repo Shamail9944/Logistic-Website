@@ -1,37 +1,35 @@
 import { NextResponse } from "next/server";
 import nodemailer from 'nodemailer'
 
-const emailHandler= async(req, res) => {
-    // const body = req.json();
-    console.log(req.body);
 
-    const transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: 'shamail130silverhawk@gmail.com',
-            pass: 'flnpdqrmosnklpfk'
-        }
-    })
-
-    const mailOptions = {
-        from: req.body.email,
-        to: 'shamail130silverhawk@gmail.com',
-        subject: req.body.subject,
-        text: 'Client Name: ' + req.body.name + '\nClient Email: ' + req.body.email + '\nClient Subject: ' + req.body.subject + '\nMessage: ' + req.body.message
-    }
-
-    await new Promise((resolve, reject) => { 
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) { console.log(error); }
-            else {
-                console.log('Email sent: ' + info.response);
-                res.status(200).json({ message: 'Check Email!' })
+export async function POST(request) {
+    try {
+        const { name, email, phone, collectionPostcode, dileveryPostcode, parcelDetail, code } = await request.json()
+        const transporter = nodemailer.createTransport({
+            service: 'Gmail',
+            auth: {
+                user: 'shamail130silverhawk@gmail.com',
+                pass: 'flnpdqrmosnklpfk'
             }
         })
-    })
+        const mailOptions = {
+            from: email,
+            to: 'shamail130silverhawk@gmail.com',
+            subject: "Quick Quote Request",
+            html: `
+            <h3>Hello! I am ${name}</h3>
+            <p>Contact Details - ${phone}</p>
+            <p>Please reply me with a quick quotation for courier as per details provided</p>
+            <li>Parcel Details - ${collectionPostcode}</li>
+            <li>Delivery PostCode - ${dileveryPostcode}</li>
+            <li>Collection PostCode - ${parcelDetail}</li>
+            <li>Confirmation Code - ${code}</li>
+            `
+        }
+        await transporter.sendMail(mailOptions)
+        return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 })
+    } catch (error) {
+        return NextResponse.json({ message: 'Failed to send Email' }, { status: 500 })
 
-    return
-    // NextResponse.json({ message: 'Email sent successfully' })
-
+    }
 }
-export default emailHandler
