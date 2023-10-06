@@ -4,7 +4,7 @@ import nodemailer from 'nodemailer'
 
 export async function POST(request) {
     try {
-        const { name, email, phone, collectionPostcode, dileveryPostcode, parcelDetail, code } = await request.json()
+        const { fname, lname, email, website, phone, message } = await request.json()
         const transporter = nodemailer.createTransport({
             service: 'Gmail',
             auth: {
@@ -15,15 +15,11 @@ export async function POST(request) {
         const mailOptions = {
             from: email,
             to: 'shamail130silverhawk@gmail.com',
-            subject: "Quick Quote Request",
+            subject: "Please Contact me for more details about my order",
             html: `
-            <h3>Hello! I am ${name}</h3>
-            <p>Contact Details - ${phone}</p>
-            <p>Please reply me with a quick quotation for courier as per details provided</p>
-            <li>Parcel Details - ${collectionPostcode}</li>
-            <li>Delivery PostCode - ${dileveryPostcode}</li>
-            <li>Collection PostCode - ${parcelDetail}</li>
-            <li>Confirmation Code - ${code}</li>
+            <h3>Hello! I am ${fname} ${lname}</h3>
+            <p>Contact Details - ${phone}, ${website}</p>
+            <li>Message - ${message}</li>
             `
         }
         await transporter.sendMail(mailOptions)

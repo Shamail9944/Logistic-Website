@@ -3,7 +3,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useState } from 'react';
 // import { useRouter } from 'next/router'
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
 
 
 export default function QuotationMain() {
@@ -19,7 +19,7 @@ export default function QuotationMain() {
 
   const sendMail = async (e) => {
     e.preventDefault();
-    const response = await fetch("/api/email", {
+    const response = await fetch("/api/quotation", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ name, email, phone, collectionPostcode, dileveryPostcode, parcelDetail, code }),
@@ -72,8 +72,6 @@ export default function QuotationMain() {
       <div className='bg-[#DBE0D8] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'>
         <div className=' flex flex-col gap-x-4 mt-6 max-w-5xl'>
           <p>In order to receive a quotation you must complete the form fields below. Once you have completed the form simply click the submit button. An automated email will be sent with your form submission and one of our agents will contact you within 1 business working day with a quotation for your shipment requirements.</p>
-
-
 
           <div className='border-2 border-solid border-[#FDAF17] px-6 py-4 rounded-lg my-4'>
             <form className='flex flex-col gap-1 w-full mx-auto'
@@ -169,10 +167,6 @@ export default function QuotationMain() {
               </div>
             </form>
           </div>
-
-
-
-
 
         </div>
       </div>
