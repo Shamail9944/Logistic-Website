@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Dropdowns from './Dropdowns'
+import SliderServices from './SliderServices'
 
 export default function ServicesMain() {
   return (
@@ -84,7 +85,7 @@ export default function ServicesMain() {
           <h3 className="font-bold mb-5">PERMISSIBLE ITEMS & BUSINESS SECTORS</h3>
           <p className=" mb-5">We can handle any type of parcel as long as it is correctly packaged and is not listed in our prohibited* items list shown below. Our courier services covers a wide range of business sectors:</p>
           <div className='flex flex-col md:flex-row gap-x-10'>
-
+            <SliderServices />
           </div>
           <p className="text-[#6C0287] mb-5">All items should be packed in appropriate packaging with quilted lining or bubble wrap. Furthermore, if you wish to save the trunk from damage, you should pack it into an extra box.</p>
         </div>
