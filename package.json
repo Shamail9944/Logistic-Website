@@ -16,6 +16,7 @@
     "next": "latest",
     "nodemailer": "^6.9.5",
     "react": "latest",
+    "react-confetti": "^6.1.0",
     "react-dom": "latest",
     "react-facebook": "^9.0.12",
     "react-hook-form": "^7.47.0",
