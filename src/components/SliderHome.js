@@ -24,15 +24,15 @@ export default function SliderHome() {
 
     prevArrow: (
       <div className='mx-5 md:mx-10  top-45 md:top-40'>
-        <div className='h-15 w-15 p-2 bg-[#27262675] rounded-full'>
-          <ArrowLeftCircleIcon className='h-10 w-10 text-amber-400 curser-pointer' />
+        <div className='h-15 w-15 p-2 bg-[#27262675] rounded-full hover:bg-[#6C0287] transition-all duration-300'>
+          <ArrowLeftCircleIcon className='h-5 w-5 text-amber-400 curser-pointer' />
         </div>
       </div>
     ),
     nextArrow: (
       <div className='mx-5 md:mx-10  top-45 md:top-40'>
-        <div className='h-15 w-15 p-2 bg-[#27262675] rounded-full'>
-          <ArrowRightCircleIcon className='h-10 w-10 text-amber-400 curser-pointer' />
+        <div className='h-15 w-15 p-2 bg-[#27262675] rounded-full hover:bg-[#6C0287] transition-all duration-300'>
+          <ArrowRightCircleIcon className='h-5 w-5 text-amber-400 curser-pointer' />
         </div>
       </div>
     ),

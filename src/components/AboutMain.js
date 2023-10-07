@@ -9,7 +9,7 @@ export default function AboutMain() {
   return (
     <div className='bg-[#FFFFFF] w-full'>
 
-      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-4 py-4 lg:py-8'>
+      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-0 py-4 lg:py-8'>
         <div className='justify-start'>
           <h2 className='font-bold'>ABOUT</h2>
           <p>We are a reliable courier company specialising in sameday delivery service throughout the UK</p>

@@ -34,9 +34,8 @@ export default function MainHeaderPri() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-[#6C0287] text-white">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between p-2 lg:px-4" aria-label="Global">
-
+    <header className="bg-[#6C0287] text-white sticky top-[0]">
+      <nav className="mx-auto flex max-w-5xl items-center justify-between py-2 px-4 lg:px-0 " aria-label="Global">
 
         <div className="flex lg:flex-1 pl-2">
           <Link href="/" className="-m-3 p-1 flex flex-row gap-x-3">
@@ -64,28 +63,28 @@ export default function MainHeaderPri() {
 
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-8">
-          <Link href="/" className="text-sm font-semibold leading-6 text-white">
+          <Link href="/" className="text-sm font-semibold leading-6 text-white hover:text-[#FDAF17] transition-all duration-300">
             Home
           </Link>
-          <Link href="/about" className="text-sm font-semibold leading-6 text-white">
+          <Link href="/about" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
             About
           </Link>
-          <Link href="/services" className="text-sm font-semibold leading-6 text-white">
+          <Link href="/services" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
             Services
           </Link>
-          <Link href="/fleet" className="text-sm font-semibold leading-6 text-white">
+          <Link href="/fleet" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
             Fleet
           </Link>
-          <Link href="/network" className="text-sm font-semibold leading-6 text-white">
+          <Link href="/network" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
             Network
           </Link>
-          <Link href="/quotation" className="text-sm font-semibold leading-6 text-white">
+          <Link href="/quotation" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
             Quotation
           </Link>
-          <Link href="/news" className="text-sm font-semibold leading-6 text-white">
+          <Link href="/news" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
             News
           </Link>
-          <Link href="/contact" className="text-sm font-semibold leading-6 text-white">
+          <Link href="/contact" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
             Contact
           </Link>
         </div>

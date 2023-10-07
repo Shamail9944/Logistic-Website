@@ -8,7 +8,7 @@ import SliderServices from './SliderServices'
 export default function ServicesMain() {
   return (
     <div className='bg-[#FFFFFF] w-full'>
-      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-4 py-4 lg:py-8'>
+      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-0 py-4 lg:py-8'>
         <div className='justify-start'>
           <h2 className='font-bold'>SERVICES</h2>
           <p>We offer a bespoke courier service that meets your business demands</p>
@@ -35,7 +35,6 @@ export default function ServicesMain() {
           />
 
         </div>
-
       </div>
 
       <div className='bg-[#FFFFFF] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'>

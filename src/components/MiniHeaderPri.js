@@ -12,27 +12,27 @@ import { FaHouseSignal } from 'react-icons/fa6'
 export default function MiniHeaderPri() {
   return (
     <div className='hidden lg:block w-full bg-[#6C0287]'>
-      <div className="mx-auto max-w-6xl flex items-center pt-2 justify-between text-white text-sm font-bold align-middle">
+      <div className="mx-auto max-w-5xl flex items-center pt-2 justify-between text-white text-sm font-bold align-middle">
         <div className='flex gap-x-5'>
           <div className="flex flex-row gap-x-2 ">
-            <GiRotaryPhone />
-            <p>03xx xxxxxxx</p>
+            <GiRotaryPhone className='text-[#FDAF17] text-xl' />
+            <p className="hover:text-[#FDAF17] transition-all duration-300">03xx xxxxxxx</p>
           </div>
           <div className="flex flex-row gap-x-2">
-            <SlEnvolopeLetter />
-            <p>info@XXXCouriers.co.uk</p>
+            <SlEnvolopeLetter className='text-[#FDAF17] text-lg' />
+            <p className="hover:text-[#FDAF17] transition-all duration-300">info@XXXCouriers.co.uk</p>
           </div>
         </div>
         <div className='flex gap-x-5 lg:justify-end'>
           <div className="flex flex-row gap-x-2">
-            <FaHouseSignal />
-            <p>Subscribe</p>
+            <FaHouseSignal className='text-[#FDAF17] text-xl' />
+            <p className="hover:text-[#FDAF17] transition-all duration-300">Subscribe</p>
           </div>
           <div className="flex flex-row gap-x-2 items-center">
-            <Link target="_blank" href={'https://www.fb.com//'} className="text-xl hover:text-accent transition-all duration-300"><BiLogoFacebook /></Link>
-            <Link target="_blank" href={'https://www.instagram.com//'} className="text-xl hover:text-accent transition-all duration-300"><AiOutlineInstagram /></Link>
-            <Link target="_blank" href={'https://www.twitter.com//'} className="text-xl hover:text-accent transition-all duration-300"><AiOutlineTwitter /></Link>
-            <Link target="_blank" href={'https://www.youtube.com//'} className="text-xl hover:text-accent transition-all duration-300"><TfiYoutube /></Link>
+            <Link target="_blank" href={'https://www.fb.com//'} className="text-xl hover:text-[#FDAF17] transition-all duration-300"><BiLogoFacebook /></Link>
+            <Link target="_blank" href={'https://www.instagram.com//'} className="text-xl hover:text-[#FDAF17] transition-all duration-300"><AiOutlineInstagram /></Link>
+            <Link target="_blank" href={'https://www.twitter.com//'} className="text-xl hover:text-[#FDAF17] transition-all duration-300"><AiOutlineTwitter /></Link>
+            <Link target="_blank" href={'https://www.youtube.com//'} className="text-xl hover:text-[#FDAF17] transition-all duration-300"><TfiYoutube /></Link>
           </div>
         </div>
       </div>
