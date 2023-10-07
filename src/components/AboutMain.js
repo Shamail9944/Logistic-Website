@@ -47,8 +47,8 @@ export default function AboutMain() {
       <div className='bg-[#DBE0D8] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'>
 
         <h3 className="font-bold mb-5">LEARN MORE ABOUT OUR BUSINESS</h3>
-        <div className='flex flex-col md:flex-row '>
-          <div className='bg-[#e13f3f] flex items-center justify-center w-[350px] h-[400px] overflow-hidden'
+        <div className='flex flex-col md:flex-row gap-5'>
+          <div className='bg-[#e13f3f] flex items-center justify-center w-[350px] h-[400px] overflow-hidden rounded-md'
             style={{
               backgroundImage: `url('/services.jpg')`,
               backgroundPosition: "center",
@@ -62,17 +62,17 @@ export default function AboutMain() {
             }}
           >
             <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12">
-              <div className='font-bold text-9xl text-yellow-500 mb-5'><BiBarcodeReader /></div>
-              <h2 className='text-white font-bold text-3xl mb-5'>Services</h2>
-              <p className='text-white text-md text-center mb-3'>We offer a bespoke courier service that meets your business demands</p>
+              <div className='font-bold text-9xl text-amber-700  mb-5'><BiBarcodeReader /></div>
+              <h2 className=' font-bold text-3xl mb-5'>Services</h2>
+              <p className=' text-md text-center mb-3 font-semibold'>We offer a bespoke courier service that meets your business demands</p>
               <Link href="/services">
-                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md text-white tracking-widest'>
+                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden bg-[#6C0287] font-bold text-md  tracking-widest  text-white'>
                   LEARN MORE
                 </button>
               </Link>
             </div>
           </div>
-          <div className='bg-[#e13f3f] flex items-center justify-center w-[350px] h-[400px] overflow-hidden'
+          <div className='bg-[#e13f3f] flex items-center justify-center w-[350px] h-[400px] overflow-hidden rounded-md'
             style={{
               backgroundImage: `url('/fleet.jpg')`,
               backgroundPosition: "center",
@@ -85,18 +85,18 @@ export default function AboutMain() {
               justifyContent: 'center'
             }}
           >
-            <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12">
-              <div className='font-bold text-9xl text-yellow-500 mb-5'><FaTruck /></div>
-              <h2 className='text-white font-bold text-3xl mb-5'>FLEET</h2>
-              <p className='text-white text-md text-center mb-3'>From small vans to long wheel based – we have the fleet to meet your needs</p>
+            <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12 ">
+              <div className='font-bold text-9xl text-amber-700 mb-5'><FaTruck /></div>
+              <h2 className=' font-bold text-3xl mb-5'>FLEET</h2>
+              <p className=' text-md text-center mb-3 font-semibold'>From small vans to long wheel based – we have the fleet to meet your needs</p>
               <Link href="/fleet">
-                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md text-white tracking-widest'>
+                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md  tracking-widest  text-white'>
                   LEARN MORE
                 </button>
               </Link>
             </div>
           </div>
-          <div className='bg-[#e13f3f] flex items-center justify-center w-[350px] h-[400px] overflow-hidden'
+          <div className='bg-[#e13f3f] flex items-center justify-center w-[350px] h-[400px] overflow-hidden rounded-md'
             style={{
               backgroundImage: `url('/network.jpg')`,
               backgroundPosition: "center",
@@ -110,11 +110,11 @@ export default function AboutMain() {
             }}
           >
             <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12">
-              <div className='font-bold text-9xl text-yellow-500 mb-5'><LuNetwork /></div>
-              <h2 className='text-white font-bold text-3xl mb-5'>NETWORK</h2>
-              <p className='text-white text-md text-center mb-3'>Our success is based on a strong relationship with our logistic partners</p>
+              <div className='font-bold text-9xl text-amber-700 mb-5'><LuNetwork /></div>
+              <h2 className=' font-bold text-3xl mb-5'>NETWORK</h2>
+              <p className=' text-md text-center mb-3 font-semibold'>Our success is based on a strong relationship with our logistic partners</p>
               <Link href="/network">
-                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md text-white tracking-widest'>
+                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md  tracking-widest  text-white'>
                   LEARN MORE
                 </button>
               </Link>
