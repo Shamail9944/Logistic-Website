@@ -27,7 +27,7 @@ export default function ContactMain() {
     <div className='bg-[#FFFFFF] w-full'>
 
 
-      <div className='bg-[#FFFFFF] max-w-6xl text-black mx-auto flex items-start justify-start px-6 lg:px-4 py-4 lg:py-8'
+      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-0 py-4 lg:py-8'
       // style={{
       //   backgroundImage: `url(/network-banner.jpg)`,
       //   backgroundSize: "cover",
@@ -46,7 +46,7 @@ export default function ContactMain() {
 
       <div className='bg-[#DBE0D8] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'>
 
-        <div className=' flex flex-col md:flex-row gap-x-12 mt-6 max-w-6xl text-center'>
+        <div className=' flex flex-col md:flex-row gap-x-12 mt-6 max-w-5xl text-center'>
 
           <div className='lg:flex-1 text-xs flex flex-col items-center'>
             <h2 className='font-bold'>CONTACT BY EMAIL</h2>
