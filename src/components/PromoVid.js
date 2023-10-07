@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import ReactPlayer from 'react-player'
+import ReactPlayer from 'react-player/youtube'
 
 import dynamic from 'next/dynamic'
 
@@ -10,10 +10,12 @@ export default function PromoVid() {
   return (
     <div className='bg-[#FFFFFF] '>
 
-      <div className='bg-[#CCCCCC] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-8 lg:py-10 justify-between'>
-        <div className='max-w-5xl text-center self-center'>
+      <div className='bg-[#CCCCCC] text-black mx-auto w-full flex flex-col items-center px-6 lg:px-4 py-8 lg:py-10 justify-between'>
+        <div className=' text-center self-center w-full'>
           <h2 className='text-3xl font-bold mb-10'>CORPORATE PROMO</h2>
-          <ReactPlayer url='https://www.youtube.com/watch?v=wWgIAphfn2U' width='100%' height='100%' loading="lazy" />
+          <div className='flex center justify-center'>
+            <ReactPlayer url='https://www.youtube.com/watch?v=wWgIAphfn2U' width='80vw' loading="lazy" muted={true} playing={true} className="h-[20vh] md:[50vh] lg:[90vh]" />
+          </div>
         </div>
       </div>
 
