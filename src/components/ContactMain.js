@@ -134,7 +134,7 @@ export default function ContactMain() {
             <h2 className='font-bold'>CONTACT BY SOCIAL MEDIA</h2>
             <p>You can also communicate through our social media platforms. You can send us a message via facebook messenger by clicking the icon at the bottom right or alternatively you can send a direct message via twitter, instagram or snapchat.</p>
 
-            <div className='flex flex-col md:flex-row text-xs items-center gap-x-4'>
+            <div className='flex flex-col md:flex-row text-xs items-center gap-x-4 mt-5'>
               <Image
                 src="/insta-link.jpg"
                 width={200}
@@ -149,6 +149,8 @@ export default function ContactMain() {
                 alt="Warehouse"
                 className='my-2'
               />
+            </div>
+            <div className='flex mt-5'>
               <Link href="/">
                 <button className='btn rounded-full border border-white/50 max-w-[400px] h-[30px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#37ABED] text-sm text-white gap-x-2'>
                   <BiLogoTwitter className='text-2xl' />

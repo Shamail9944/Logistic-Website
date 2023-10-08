@@ -37,7 +37,7 @@ export default function NewsLetterSubPri() {
       }
 
       setStatus(201); setMessage("Thank you for subscribing my newsletter 👻."); setShowConfetti(true); setRun(true);
-      setTimeout(() => { setTotalCounts(0); setMessage(""); resetForm(); setButtonDisabled(false); }, 4000); setTotalCounts(400);
+      setTimeout(() => { setTotalCounts(0); setMessage(""); setButtonDisabled(false); }, 4000); setTotalCounts(400);
     } catch (error) {
       setStatus(500);
       setMessage("Error joining the newsletter. You can directly contact me at github@ebraj.");
