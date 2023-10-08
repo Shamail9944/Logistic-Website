@@ -34,7 +34,7 @@ export default function MainHeaderPri() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-[#6C0287] text-white sticky top-[0]">
+    <header className="bg-[#6C0287] text-white sticky top-[0] z-5">
       <nav className="mx-auto flex max-w-5xl items-center justify-between py-2 px-4 lg:px-0 " aria-label="Global">
 
         <div className="flex lg:flex-1 pl-2">
@@ -123,6 +123,7 @@ export default function MainHeaderPri() {
 
                 <Link
                   href="/"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Home

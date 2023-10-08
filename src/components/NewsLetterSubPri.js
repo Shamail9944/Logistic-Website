@@ -57,18 +57,18 @@ export default function NewsLetterSubPri() {
           <p className='text-center text-xs md:text-base'>Enter your Email & be the first to know about our company updates!</p>
 
           <div className='max-w-5xl'>
-            <form className="flex flex-row justify-center pt-4 gap-x-2" onSubmit={subscribeEmail}>
+            <form className="flex flex-col max-w-4xl md:flex-row justify-center py-4 gap-x-2" onSubmit={subscribeEmail}>
               <input
                 name='email'
                 id='email'
                 type="email"
                 placeholder='Email'
-                className='input p-2 rounded-lg w-[400px] h-[50px]'
+                className='input p-2 my-4 md:my-0 rounded-lg w-full h-[50px]'
                 required
                 value={email}
                 onChange={(e) => { setEmail(e.target.value); }} />
 
-              <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center bg-[#6C0287] font-bold text-xs md:text-sm text-white' type="submit" disabled={buttonDisabled}>
+              <button className='btn rounded-md border border-white/50 max-w-xl h-[50px] px-8 flex items-center justify-center bg-[#6C0287] font-bold text-xs md:text-sm text-white' type="submit" disabled={buttonDisabled}>
                 {submitting ? "Submitting" : "SUBSCRIBE"}
               </button>
               {message && (<p className={`${status !== 201 ? "text-red-500" : "text-green-500"} pt-4 font-black `}>{message}</p>)}

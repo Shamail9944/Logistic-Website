@@ -300,7 +300,7 @@ export default function Dropdowns() {
         <div className="flex flex-wrap justify-center">
             {letters.map((item, index) => {
                 return (
-                    <Menu as="div" key={index} className="relative inline-block text-left my-5 px-8">
+                    <Menu as="div" key={index} className="relative inline-block text-left my-2 px-1 md:my-5 md:px-8">
                         <div className=''>
                             <Menu.Button className="inline-flex w-full justify-center px-2 py-2 text-sm font-2xl gap-x-1 relative">
                                 <AiOutlinePlusSquare

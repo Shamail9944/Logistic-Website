@@ -140,18 +140,15 @@ export default function ContactMain() {
                 width={200}
                 height={250}
                 alt="Warehouse"
-                className='mt-5 pb-10'
+                className='my-2'
               />
               <Image
                 src="/snapchat-link.jpg"
                 width={200}
                 height={250}
                 alt="Warehouse"
-                className='mt-5 pb-10'
+                className='my-2'
               />
-            </div>
-
-            <div className=' w-full items-start'>
               <Link href="/">
                 <button className='btn rounded-full border border-white/50 max-w-[400px] h-[30px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#37ABED] text-sm text-white gap-x-2'>
                   <BiLogoTwitter className='text-2xl' />
@@ -159,6 +156,7 @@ export default function ContactMain() {
                 </button>
               </Link>
             </div>
+
           </div>
 
         </div>

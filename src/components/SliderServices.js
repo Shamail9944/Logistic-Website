@@ -41,20 +41,23 @@ export default function SliderServices() {
         ),
     }
     return (
-        <div className="w-full mb-10">
+        <div className="max-w-5xl mb-10">
 
             <div className="slide-container">
                 <Zoom {...zoomInProperties}>
                     {images.map((each, index) =>
-                        <div key={index} className='flex justify-center md:items-center items-start w-screen h-[60vh] relative'>
-                            <Image
-                                src={each}
-                                layout="fill"
-                                objectFit="cover" // change to suit your needs
-                                alt="slider"
-                                className='w-screen'
-                            />
+                    <div key={index} className='flex flex-col md:flex-row justify-center md:items-center items-start w-screen h-[60vh] relative'>
+                        <Image
+                        src={each}
+                        layout="fill"
+                        objectFit="cover" // change to suit your needs
+                        alt="slider"
+                        className=''
+                        />
+                        <div>
+                            <h2>Hello</h2>
                         </div>
+                    </div>
                     )}
                 </Zoom>
             </div>

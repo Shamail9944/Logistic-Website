@@ -11,7 +11,6 @@ export default function SliderHome() {
   const images = [
     '/slider/1.jpg',
     '/slider/2.jpg',
-    '/slider/3.avif',
     '/slider/4.jpg',
     '/slider/5.jpg'
   ];

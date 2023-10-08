@@ -12,7 +12,7 @@ export default function GetaQuotePri() {
       </div>
       <div className='flex justify-center pb-8'>
         <Link href="/quotation">
-          <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-xs md:text-sm'>
+          <button className='btn rounded-md border border-white/50 max-w-xl h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-xs md:text-sm'>
             GET QUOTATION
           </button>
         </Link>

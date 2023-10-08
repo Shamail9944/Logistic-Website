@@ -54,7 +54,8 @@ export default function AboutMain() {
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              width: "350px",
+              width: "250px",
+              maxWidth: "350px",
               height: "400px",
               display: 'flex',
               alignItems: 'center',
@@ -66,7 +67,7 @@ export default function AboutMain() {
               <h2 className=' font-bold text-3xl mb-5'>Services</h2>
               <p className=' text-md text-center mb-3 font-semibold'>We offer a bespoke courier service that meets your business demands</p>
               <Link href="/services">
-                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden bg-[#6C0287] font-bold text-md  tracking-widest  text-white'>
+                <button className='btn rounded-md border border-white/50 max-w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden bg-[#6C0287] font-bold text-xs md:text-md tracking-widest  text-white'>
                   LEARN MORE
                 </button>
               </Link>
@@ -78,7 +79,8 @@ export default function AboutMain() {
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              width: "350px",
+              width: "250px",
+              maxWidth: "350px",
               height: "400px",
               display: 'flex',
               alignItems: 'center',
@@ -90,7 +92,7 @@ export default function AboutMain() {
               <h2 className=' font-bold text-3xl mb-5'>FLEET</h2>
               <p className=' text-md text-center mb-3 font-semibold'>From small vans to long wheel based – we have the fleet to meet your needs</p>
               <Link href="/fleet">
-                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md  tracking-widest  text-white'>
+                <button className='btn rounded-md border border-white/50 max-w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-xs  tracking-widest  text-white'>
                   LEARN MORE
                 </button>
               </Link>
@@ -102,7 +104,8 @@ export default function AboutMain() {
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              width: "350px",
+              width: "250px",
+              maxWidth: "350px",
               height: "400px",
               display: 'flex',
               alignItems: 'center',
@@ -114,7 +117,7 @@ export default function AboutMain() {
               <h2 className=' font-bold text-3xl mb-5'>NETWORK</h2>
               <p className=' text-md text-center mb-3 font-semibold'>Our success is based on a strong relationship with our logistic partners</p>
               <Link href="/network">
-                <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-md  tracking-widest  text-white'>
+                <button className='btn rounded-md border border-white/50 max-w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-xs  tracking-widest  text-white'>
                   LEARN MORE
                 </button>
               </Link>
