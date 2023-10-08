@@ -42,7 +42,7 @@ export default function SliderHome() {
       <div className="slide-container">
         <Zoom {...zoomInProperties}>
           {images.map((each, index) =>
-            <div key={index} className='flex justify-center md:items-center items-start w-screen h-[60vh] relative'>
+            <div key={index} className='flex justify-center md:items-center items-start w-screen h-[65vh] relative'>
               <Image
                 src={each}
                 layout="fill"
