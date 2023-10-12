@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React from 'react'
 import { BiLogoTwitter } from 'react-icons/bi'
 import { useState } from 'react';
+import { toast } from 'react-toastify';
+import { redirect } from 'next/navigation'
 
 export default function ContactMain() {
   const [fname, setFname] = useState("");
@@ -12,15 +14,48 @@ export default function ContactMain() {
   const [website, setWebsite] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
 
   const sendMail = async (e) => {
     e.preventDefault();
-    const response = await fetch("/api/email", {
+    if (submitted) { return; }
+    setFname(""); setLname(""); setEmail(""); setWebsite(""); setPhone(""); setMessage(""); setSubmitted(true);
+    console.log(fname, lname, email, website, phone, message);
+    const res = await fetch("/api/email", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ fname, lname, email, website, phone, message }),
+    }).then((res) => {
+      if (res.status === 200) {
+        toast.success('Email Sent Successfully.', {
+          type: "success",
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      } else {
+        toast.error('Failed to send email, try social links at top right corner.', {
+          type: "error",
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      }
+      // router.push('/')
+      // redirect('/')
+      return
     })
-    console.log(await response.json())
+    // console.log(await res.json())
   }
 
   return (

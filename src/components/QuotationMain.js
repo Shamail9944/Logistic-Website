@@ -2,13 +2,13 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
 import { useState } from 'react';
-// import { useRouter } from 'next/router'
-// import { toast } from 'react-toastify';
+import { toast } from 'react-toastify';
+import { redirect } from 'next/navigation'
 
 
 export default function QuotationMain() {
 
-  const [name, setName] = useState("");
+  const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [collectionPostcode, setCollectionPostcode] = useState("");
@@ -19,45 +19,45 @@ export default function QuotationMain() {
 
   const sendMail = async (e) => {
     e.preventDefault();
-    const response = await fetch("/api/quotation", {
+    if (submitted) { return; }
+    setFullName(""); setEmail(""); setPhone(""); setCollectionPostcode(""); setDileveryPostcode(""); setParcelDetail(""); setCode(""); setSubmitted(true);
+    console.log(fullName, email, phone, collectionPostcode, dileveryPostcode, parcelDetail, code);
+    const res = await fetch("/api/quotation", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ name, email, phone, collectionPostcode, dileveryPostcode, parcelDetail, code }),
+      body: JSON.stringify({ fullName, email, phone, collectionPostcode, dileveryPostcode, parcelDetail, code }),
+    }).then((res) => {
+      if (res.status === 200) {
+        toast.success('Quotation Request sent successfully. We will reach back shortly.', {
+          type: "success",
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      } else {
+        toast.error('Failed to send Quotation. Please Call on contact numbers provided.', {
+          type: "error",
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      }
+      // router.push('/')
+      // redirect('/')
+      return
     })
-    console.log(await response.json())
-    // const data = await response.json()
-    // await response.json()
-    // .then((response) => {
-    //   if (response.ok) {
-    //     toast.success('Email Sent Successfully.', {
-    //       position: "top-right",
-    //       autoClose: 5000,
-    //       hideProgressBar: false,
-    //       closeOnClick: true,
-    //       pauseOnHover: true,
-    //       draggable: true,
-    //       progress: undefined,
-    //       theme: "colored",
-    //     });
-    //   }
-    //   if (!response.ok) {
-    //     toast.error('Failed to send Email. Try again, please.', {
-    //       position: "top-right",
-    //       autoClose: 5000,
-    //       hideProgressBar: false,
-    //       closeOnClick: true,
-    //       pauseOnHover: true,
-    //       draggable: true,
-    //       progress: undefined,
-    //       theme: "colored",
-    //     });
-    //   }
-    //   // router.push('/')
-    //   // return
-    // })
-
+    // console.log(await res.json())
   }
-  // const router = useRouter();
 
   return (
     <div className='bg-[#FFFFFF] w-full'>
@@ -88,8 +88,8 @@ export default function QuotationMain() {
                 placeholder='Full Name'
                 className='input mt-4 p-2 rounded-lg'
                 required
-                value={name}
-                onChange={(e) => { setName(e.target.value); }} />
+                value={fullName}
+                onChange={(e) => { setFullName(e.target.value); }} />
 
               <input
                 name='email'

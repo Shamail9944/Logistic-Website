@@ -26,10 +26,13 @@ export async function POST(request) {
             <li>Confirmation Code - ${code}</li>
             `
         }
-        await transporter.sendMail(mailOptions)
-        return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 })
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) { console.log(error); }
+            else { console.log('Email sent: ' + info.response); }
+        })
+        return NextResponse.json({ message: 'Quotation Request sent successfully. We will reach back shortly.' }, { status: 200 })
     } catch (error) {
-        return NextResponse.json({ message: 'Failed to send Email' }, { status: 500 })
+        return NextResponse.json({ message: 'Failed to send Quotation. Please Call on contact numbers provided.' }, { status: 500 })
 
     }
 }

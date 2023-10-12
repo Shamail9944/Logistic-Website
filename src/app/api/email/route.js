@@ -22,10 +22,12 @@ export async function POST(request) {
             <li>Message - ${message}</li>
             `
         }
-        await transporter.sendMail(mailOptions)
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) { console.log(error); }
+            else { console.log('Email sent: ' + info.response); }
+        })
         return NextResponse.json({ message: 'Email sent successfully' }, { status: 200 })
     } catch (error) {
-        return NextResponse.json({ message: 'Failed to send Email' }, { status: 500 })
-
+        return NextResponse.json({ error: 'Nodemailer Error' }, { status: 500 })
     }
 }

@@ -5,6 +5,9 @@ import MainHeaderPri from '@/components/MainHeaderPri';
 import FooterPri from '@/components/FooterPri';
 import NewsLetterSubPri from '@/components/NewsLetterSubPri';
 import GetaQuotePri from '@/components/GetaQuotePri';
+import { ToastContainer } from './nextToast.js';
+import 'react-toastify/dist/ReactToastify.css';
+import FacebookChat from '@/components/FacebookChat';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +25,8 @@ export default function RootLayout({ children }) {
         {children}
         <GetaQuotePri />
         <NewsLetterSubPri />
+        <FacebookChat/>
+        <ToastContainer />
         <FooterPri />
       </body>
     </html>
