@@ -64,12 +64,12 @@ export default function NewsLetterSubPri() {
                 id='email'
                 type="email"
                 placeholder='Email'
-                className='input p-2 my-4 md:my-0 rounded-lg w-full h-[50px]'
+                className='input p-2 my-4 md:my-0 rounded-lg w-full h-[40px]'
                 required
                 value={email}
                 onChange={(e) => { setEmail(e.target.value); }} />
 
-              <button className='btn rounded-md border border-white/50 max-w-xl h-[50px] px-8 flex items-center justify-center bg-[#6C0287] font-bold text-xs md:text-sm text-white' type="submit" disabled={buttonDisabled}>
+              <button className='btn rounded-md border border-white/50 max-w-xl h-[40px] px-8 flex items-center justify-center bg-[#6C0287] font-bold text-xs md:text-sm text-white' type="submit" disabled={buttonDisabled}>
                 {submitting ? "Submitting" : "SUBSCRIBE"}
               </button>
             </form>

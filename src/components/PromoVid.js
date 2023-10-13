@@ -14,7 +14,7 @@ export default function PromoVid() {
         <div className=' text-center self-center w-full'>
           <h2 className='text-3xl font-bold mb-10'>CORPORATE PROMO</h2>
           <div className='flex center justify-center'>
-            <ReactPlayer url='https://www.youtube.com/watch?v=wWgIAphfn2U' width='80vw' muted={true} playing={true} className="h-[20vh] md:[50vh] lg:[90vh]" />
+            <ReactPlayer url='https://www.youtube.com/watch?v=wWgIAphfn2U' muted={true} playing={true} className="h-[20vh] md:[50vh] lg:[90vh] lg:w-[50vh]" />
           </div>
         </div>
       </div>
