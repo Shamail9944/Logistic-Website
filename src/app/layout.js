@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <ToastContainer />
         <FooterPri />
 
-        <div id="fb-root"></div>
+        {/* <div id="fb-root"></div>
         <div id="fb-customer-chat" className="fb-customerchat"></div>
         <Script id="fb-chat" strategy="lazyOnload">
           {`
@@ -54,10 +54,8 @@ export default function RootLayout({ children }) {
           fjs.parentNode.insertBefore(js, fjs);  
           }(document, 'script', 'facebook-jssdk'));  
           `}
-        </Script>
-        {/* alpha */}
+        </Script> */}
       </body>
     </html>
   )
 }
-// YOUR\_PAGE\_ID
