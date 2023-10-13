@@ -35,7 +35,8 @@ export default function RootLayout({ children }) {
         <Script id="fb-chat" strategy="lazyOnload">
           {`
           var chatbox = document.getElementById('fb-customer-chat');
-          chatbox.setAttribute("page\_id", "YOUR\_PAGE\_ID");
+          chatbox.setAttribute("page\_id", "139168849275585");
+          chatbox.setAttribute("app\_id", "1028134491947827");
           chatbox.setAttribute("attribution", "biz\_inbox");
 
           window.fbAsyncInit = function() {
@@ -59,3 +60,4 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+// YOUR\_PAGE\_ID
