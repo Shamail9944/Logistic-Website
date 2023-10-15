@@ -6,27 +6,25 @@ import { LuBoxes } from 'react-icons/lu'
 
 export default function FleetMain() {
   return (
-    <div className='bg-[#FFFFFF] w-full'>
+    <div className=' w-full bg-[#CCCCCC]'>
 
 
-      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-4 py-4 lg:py-8'
-      // style={{
-      //   backgroundImage: `url(/network-banner.jpg)`,
-      //   backgroundSize: "cover",
-      //   backgroundRepeat: "no-repeat",
-      //   width: "100vw",
-      //   height: "100vh"
-      // }}
-      >
+      <div className='max-w-8xl text-black mx-auto flex items-start justify-start px-6 lg:px-4 py-4 lg:py-8'
+        style={{
+          backgroundImage: "url(fleet-header.jpg)",
+          backgroundPosition: "bottom",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          width: "80%",
+          height: "auto",
+        }}>
         <div className='justify-start'>
           <h2 className='font-bold'>FLEET</h2>
           <p>From small vans to long wheel based - we have the fleet to meet your needs</p>
         </div>
       </div>
 
-
-
-      <div className='bg-[#DBE0D8] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-0 justify-between'>
+      <div className='bg-[#DBE0D8] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-0 pb-2 lg:pb-10 justify-between'>
         <h1 className='font-bold text-2xl'>DIFFERENT TYPES OF VEHICLES</h1>
 
         <div className=' flex flex-col md:flex-row gap-x-12 mt-6 max-w-5xl text-center'>

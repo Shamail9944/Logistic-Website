@@ -27,7 +27,7 @@ export default function ServicesMain() {
           </div>
 
           <Image
-            src="/warehouse.jpg"
+            src="/slider/1.jpg"
             width={900}
             height={500}
             alt="Warehouse"
