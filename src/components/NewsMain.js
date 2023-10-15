@@ -3,10 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { BiShareAlt } from 'react-icons/bi'
+import BtnNews from './BtnNews'
 
 
-const news = [
+export const news = [
   {
+    id: "1",
     img: "/fleet.jpg",
     title: "FEDEX TNT ACQUISITION",
     postBy: "ASK Sameday Couriers",
@@ -34,6 +36,7 @@ const news = [
     ]
   },
   {
+    id: "2",
     img: "/fleet.jpg",
     title: "UNPACKING THE DEMAND OF THE UK COURIER",
     postBy: "ASK Sameday Couriers",
@@ -61,6 +64,7 @@ const news = [
     ]
   },
   {
+    id: "3",
     img: "/fleet.jpg",
     title: "COURIER AND EXPRESS DELIVERY MARKET POSTS £1 BILLION INCREASE IN SALES IN 2016",
     postBy: "ASK Sameday Couriers",
@@ -88,6 +92,7 @@ const news = [
     ]
   },
   {
+    id: "4",
     img: "/fleet.jpg",
     title: "COURIER AND EXPRESS DELIVERY MARKET POSTS £1 BILLION INCREASE IN SALES IN 2016",
     postBy: "ASK Sameday Couriers",
@@ -130,13 +135,15 @@ export default function NewsMain() {
         {news.map((item, index) => {
           return (
             <div key={index} className='flex flex-col mb-10'>
-              <Image
-                src={item.img}
-                width={1200}
-                height={500}
-                alt="Warehouse"
-                className='mb-4'
-              />
+              <Link href="/news/${item.id}">
+                <Image
+                  src={item.img}
+                  width={1200}
+                  height={500}
+                  alt="Warehouse"
+                  className='mb-4'
+                />
+              </Link>
               <div className='flex flex-col md:flex-row'>
                 <div className='mr-5 my-5 text-4xl text-slate-600'><BiShareAlt /></div>
                 <div>
@@ -145,11 +152,12 @@ export default function NewsMain() {
                   <p className='mb-5 text-black'>{item.headline}</p>
 
                   <div className='flex justify-start pb-8'>
-                    <Link href="/">
+                    {/* <Link href="/news/${item.id}">
                       <button className='btn rounded-md border border-white/50 max-w-[200px] h-[50px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-sm text-white'>
                         Read More
                       </button>
-                    </Link>
+                    </Link> */}
+                    <BtnNews item={item} />
                   </div>
                 </div>
               </div>
