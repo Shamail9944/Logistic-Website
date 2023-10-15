@@ -12,11 +12,6 @@ import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'XXX Couriers',
-  description: 'Get delivery services at door steps',
-}
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

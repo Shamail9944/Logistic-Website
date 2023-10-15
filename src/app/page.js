@@ -3,6 +3,11 @@ import PromoVid from '@/components/PromoVid'
 import SliderHome from '@/components/SliderHome'
 import SpecialitySection from '@/components/SpecialitySection'
 
+export const metadata = {
+  title: 'ASK Someday - Home',
+  description: 'Get delivery services at door steps',
+}
+
 export default function Home() {
 
   return (

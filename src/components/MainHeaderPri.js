@@ -13,7 +13,7 @@ export default function MainHeaderPri() {
   const scrollPosition = useScrollPosition()
   // console.log(scrollPosition)
   return (
-    <header className="bg-[#6C0287] text-white sticky top-0 z-5">
+    <header className="bg-[#6C0287] text-white sticky top-0 z-50">
       <nav className="mx-auto flex max-w-5xl items-center justify-between py-2 px-4 lg:px-0 " aria-label="Global">
 
         <div className="flex lg:flex-1 pl-2">
@@ -62,10 +62,7 @@ export default function MainHeaderPri() {
           </Link>
         </div>
       </nav>
-
       <div className='bg-[#FDAF17] h-[10px]'></div>
-
-
       {/* Mobile menu */}
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
