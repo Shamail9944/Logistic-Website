@@ -35,13 +35,15 @@ export default function AboutMain() {
           </div>
 
         </div>
-        <Image
-          src="/warehouse.jpg"
-          width={900}
-          height={500}
-          alt="Warehouse"
-          className='mt-5 pb-10'
-        />
+        <div className='mt-6 max-w-5xl'>
+          <Image
+            src="/about-warehouse.jpg"
+            width={1024}
+            height={500}
+            alt="Warehouse"
+            className='mt-5 pb-10'
+          />
+        </div>
       </div>
 
       <div className='bg-[#DBE0D8] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-4 lg:py-8 justify-between'>
@@ -54,7 +56,7 @@ export default function AboutMain() {
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              width: "250px",
+              width: "330px",
               maxWidth: "350px",
               height: "400px",
               display: 'flex',
@@ -62,10 +64,10 @@ export default function AboutMain() {
               justifyContent: 'center'
             }}
           >
-            <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12">
-              <div className='font-bold text-9xl text-amber-700  mb-5'><BiBarcodeReader /></div>
-              <h2 className=' font-bold text-3xl mb-5'>Services</h2>
-              <p className=' text-md text-center mb-3 font-semibold'>We offer a bespoke courier service that meets your business demands</p>
+            <div className="flex flex-col items-center justify-center bg-[#989898b5] p-12">
+              <div className='font-bold text-9xl  text-[#FDAF17]  mb-5'><BiBarcodeReader /></div>
+              <h2 className=' font-bold text-3xl mb-5 text-white'>Services</h2>
+              <p className=' text-md text-center mb-3 font-semibold text-white'>We offer a bespoke courier service that meets your business demands</p>
               <Link href="/services">
                 <button className='btn rounded-md border border-white/50 max-w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden bg-[#6C0287] font-bold text-xs md:text-md tracking-widest  text-white'>
                   LEARN MORE
@@ -79,7 +81,7 @@ export default function AboutMain() {
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              width: "250px",
+              width: "330px",
               maxWidth: "350px",
               height: "400px",
               display: 'flex',
@@ -87,10 +89,10 @@ export default function AboutMain() {
               justifyContent: 'center'
             }}
           >
-            <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12 ">
-              <div className='font-bold text-9xl text-amber-700 mb-5'><FaTruck /></div>
-              <h2 className=' font-bold text-3xl mb-5'>FLEET</h2>
-              <p className=' text-md text-center mb-3 font-semibold'>From small vans to long wheel based – we have the fleet to meet your needs</p>
+            <div className="flex flex-col items-center justify-center bg-[#989898b5] p-12 ">
+              <div className='font-bold text-9xl  text-[#FDAF17] mb-5'><FaTruck /></div>
+              <h2 className=' font-bold text-3xl mb-5 text-white'>FLEET</h2>
+              <p className=' text-md text-center mb-3 font-semibold text-white'>From small vans to long wheel based – we have the fleet to meet your needs</p>
               <Link href="/fleet">
                 <button className='btn rounded-md border border-white/50 max-w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-xs  tracking-widest  text-white'>
                   LEARN MORE
@@ -104,7 +106,7 @@ export default function AboutMain() {
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              width: "250px",
+              width: "330px",
               maxWidth: "350px",
               height: "400px",
               display: 'flex',
@@ -112,10 +114,10 @@ export default function AboutMain() {
               justifyContent: 'center'
             }}
           >
-            <div className="flex flex-col items-center justify-center bg-[#989898b7] p-12">
-              <div className='font-bold text-9xl text-amber-700 mb-5'><LuNetwork /></div>
-              <h2 className=' font-bold text-3xl mb-5'>NETWORK</h2>
-              <p className=' text-md text-center mb-3 font-semibold'>Our success is based on a strong relationship with our logistic partners</p>
+            <div className="flex flex-col items-center justify-center bg-[#989898b5] p-12">
+              <div className='font-bold text-9xl  text-[#FDAF17] mb-5'><LuNetwork /></div>
+              <h2 className=' font-bold text-3xl mb-5 text-white'>NETWORK</h2>
+              <p className=' text-md text-center mb-3 font-semibold text-white'>Our success is based on a strong relationship with our logistic partners</p>
               <Link href="/network">
                 <button className='btn rounded-md border border-white/50 max-w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#6C0287] font-bold text-xs  tracking-widest  text-white'>
                   LEARN MORE

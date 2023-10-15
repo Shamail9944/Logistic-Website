@@ -50,7 +50,7 @@ export default function FooterPri() {
               width={100}
               height={100}
               alt="apc"
-              className='mt-5'
+              className='mt-5 w-auto h-auto'
             />
           </div>
           <div>
@@ -59,7 +59,7 @@ export default function FooterPri() {
               width={100}
               height={100}
               alt="tnt"
-              className='mt-5'
+              className='mt-5 w-auto h-auto'
             />
           </div>
 

@@ -15,7 +15,7 @@ export default function SpecialitySection() {
     return (
         <div className='bg-[#FFFFFF] '>
 
-            <div className='bg-[#ccccccbb] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-2 lg:py-10 justify-between'>
+            <div className='bg-[#ccccccbb] text-black mx-auto max-w-8xl flex flex-col items-center px-6 lg:px-4 py-2 lg:py-5 justify-between'>
                 <div className='max-w-xl md:max-w-6xl text-center self-center'>
                     <h1 className='font-bold text-lg md:text-2xl'>WE ARE A RELIABLE COURIER COMPANY SPECIALISING IN SAMEDAY DELIVERY SERVICE THROUGHOUT THE UK</h1>
                     <p className='text-sm md:text-xl mt-1 md:mt-5'>We are a customer driven business and our number one priority is to collect on time and deliver on time. We will collect within 60 minutes* (pending no traffic delay) and once the delivery reaches its intended destination, the customer will receive proof of delivery by SMS or email.</p>

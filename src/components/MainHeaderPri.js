@@ -1,51 +1,24 @@
 'use client'
 import { Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
-
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
+import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon, } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
+import Image from 'next/image'
+import { useScrollPosition } from '@/hooks/useScrollPosition.js'
 
-const products = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
-]
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 export default function MainHeaderPri() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+  const scrollPosition = useScrollPosition()
+  // console.log(scrollPosition)
   return (
-    <header className="bg-[#6C0287] text-white sticky top-[0] z-5">
+    <header className="bg-[#6C0287] text-white sticky top-0 z-5">
       <nav className="mx-auto flex max-w-5xl items-center justify-between py-2 px-4 lg:px-0 " aria-label="Global">
 
         <div className="flex lg:flex-1 pl-2">
           <Link href="/" className="-m-3 p-1 flex flex-row gap-x-3">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="w-auto h-12">
-              <path d="M3.375 4.5C2.339 4.5 1.5 5.34 1.5 6.375V13.5h12V6.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM13.5 15h-12v2.625c0 1.035.84 1.875 1.875 1.875h.375a3 3 0 116 0h3a.75.75 0 00.75-.75V15z" />
-              <path d="M8.25 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM15.75 6.75a.75.75 0 00-.75.75v11.25c0 .087.015.17.042.248a3 3 0 015.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 00-3.732-10.104 1.837 1.837 0 00-1.47-.725H15.75z" />
-              <path d="M19.5 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
-            </svg>
-            <p className="self-center font-bold"><span className='text-[#FDAF17] '>XXX <br /></span> Courier</p>
-
+            <Image className="w-full py-3" src="/logo.png" height={100} width={100} alt="logo" />
           </Link>
         </div>
 
@@ -63,28 +36,28 @@ export default function MainHeaderPri() {
 
 
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-8">
-          <Link href="/" className="text-sm font-semibold leading-6 text-white hover:text-[#FDAF17] transition-all duration-300">
+          <Link href="/" className="text-sm font-semibold leading-6 text-white hover:text-[#FDAF17] active:text-[#FDAF17] transition-all duration-300">
             Home
           </Link>
-          <Link href="/about" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
+          <Link href="/about" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] active:text-[#FDAF17] transition-all duration-300 text-white">
             About
           </Link>
-          <Link href="/services" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
+          <Link href="/services" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] active:text-[#FDAF17] transition-all duration-300 text-white">
             Services
           </Link>
-          <Link href="/fleet" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
+          <Link href="/fleet" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] active:text-[#FDAF17] transition-all duration-300 text-white">
             Fleet
           </Link>
-          <Link href="/network" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
+          <Link href="/network" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] active:text-[#FDAF17] transition-all duration-300 text-white">
             Network
           </Link>
-          <Link href="/quotation" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
+          <Link href="/quotation" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] active:text-[#FDAF17] transition-all duration-300 text-white">
             Quotation
           </Link>
-          <Link href="/news" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
+          <Link href="/news" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] active:text-[#FDAF17] transition-all duration-300 text-white">
             News
           </Link>
-          <Link href="/contact" className="text-sm font-semibold leading-6 hover:text-[#FDAF17] transition-all duration-300 text-white">
+          <Link href="/contact" className="text-sm font-semibold leading-6 hover:text-[#FDAF17]  transition-all duration-300 text-white">
             Contact
           </Link>
         </div>

@@ -34,7 +34,7 @@ export default function NetworkMain() {
               width={300}
               height={300}
               alt="apc"
-              className='mt-5 pb-10'
+              className='mt-5 pb-10 w-auto h-auto'
             />
             <h2 className='mb-5 font-bold text-2xl text-center'>APC OVERNIGHT: THE UK LARGEST INDEPENDENT DELIVERY NETWORK</h2>
             <p className='mb-5 text-center'>A parcel that is important enough to be sent overnight deserves the care and handling of APC Overnight. We’re proud to be the UK’s largest independent delivery network, with 105 locations. That means you’ll always leave your consignments in the hands of people who know you and your business; who care about helping you keep your promises. We specialise in timed deliveries, ensuring your package gets there when you said it would, and in pristine condition.
