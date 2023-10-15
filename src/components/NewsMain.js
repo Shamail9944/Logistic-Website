@@ -12,7 +12,7 @@ const news = [
     cat: "Industry News",
     date: "14th November 2018",
     title: "FEDEX TNT ACQUISITION",
-    headline: "Combining forces to give your business even more power. The FedEx integration of TNT is making solid progress. With the combination of our networks, you now have access to a robust portfolio of ",
+    headline: "Combining forces to give your business even more power. The FedEx integration of TNT is making solid progress.",
     articlecontext: "Combining forces to give your business even more power.The FedEx integration of TNT is making solid progress. With the combination of our networks, you now have access to a robust portfolio of FedEx services and solutions to help you grow your business.",
     articlearticleImg: ""
   },
