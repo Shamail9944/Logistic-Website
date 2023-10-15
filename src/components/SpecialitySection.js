@@ -24,46 +24,46 @@ export default function SpecialitySection() {
 
                     <div className='lg:flex-1 text-xs flex flex-col gap-x-6 '>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><BsBoxes /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><BsBoxes /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>We specialise in Same Day Nationwide and European Courier Service</p>
                         </div>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><BsClockFill /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><BsClockFill /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>We operate on a 24 hour, 7 days a week courier service</p>
                         </div>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><MdGpsFixed /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><MdGpsFixed /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>We operate on a 24 hour, 7 days a week courier service</p>
                         </div>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><AiFillIdcard /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><AiFillIdcard /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>Immediate account facilities available with flexible payment options</p>
                         </div>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><FaClipboardList /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><FaClipboardList /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>We can do Monthly or Weekly contract runs</p>
                         </div>
                     </div>
 
                     <div className='lg:flex-1 text-xs flex flex-col gap-x-6'>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><FaTruck /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><FaTruck /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>Our fleet consists of small, short & long wheel and luton vans</p>
                         </div>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><HiClipboardDocumentList /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><HiClipboardDocumentList /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>A wide range of delivery options from a single document to a van load</p>
                         </div>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><BsFillBuildingFill /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><BsFillBuildingFill /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>We have an Overnight Secure Storage Facility with CCTV (25/30 pallets)</p>
                         </div>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><BsPersonFill /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><BsPersonFill /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>Single point of contact with no call centre</p>
                         </div>
                         <div className='flex flex-col md:flex-row gap-x-6'>
-                            <div className='mb-3 md:mb-10 font-bold text-3xl md:text-7xl text-yellow-500 self-center'><MdFactory /></div>
+                            <div className='mb-3 md:mb-10 font-bold text-7xl text-yellow-500 self-center'><MdFactory /></div>
                             <p className='mb-2 md:mb-5 font-bold text-sm md:text-xl max-w-xs text-center self-center'>We cover a wide range of businesses from Supply chain to Government Organisations</p>
                         </div>
                     </div>

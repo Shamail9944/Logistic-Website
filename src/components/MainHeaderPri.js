@@ -100,42 +100,56 @@ export default function MainHeaderPri() {
                 </Link>
                 <Link
                   href="/about"
+                  onClick={() => setMobileMenuOpen(false)}
+
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   About
                 </Link>
                 <Link
                   href="/services"
+                  onClick={() => setMobileMenuOpen(false)}
+
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Services
                 </Link>
                 <Link
                   href="/fleet"
+                  onClick={() => setMobileMenuOpen(false)}
+
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Fleet
                 </Link>
                 <Link
                   href="/network"
+                  onClick={() => setMobileMenuOpen(false)}
+
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Network
                 </Link>
                 <Link
                   href="/quotation"
+                  onClick={() => setMobileMenuOpen(false)}
+
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Quotation
                 </Link>
                 <Link
                   href="/news"
+                  onClick={() => setMobileMenuOpen(false)}
+
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   News
                 </Link>
                 <Link
                   href="/contact"
+                  onClick={() => setMobileMenuOpen(false)}
+
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact
