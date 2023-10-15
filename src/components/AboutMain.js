@@ -14,10 +14,12 @@ export default function AboutMain() {
           <h2 className='font-bold'>ABOUT</h2>
           <p>We are a reliable courier company specialising in sameday delivery service throughout the UK</p>
         </div>
-        <div className='absolute bottom-2 right-5 flex flex-row items-center bg-[#3938388e] px-4 rounded-md'>
-          <h2 className='font-bold text-white'>Home</h2>
-          <span className='font-bold text-white  text-2xl mx-2'>&#8594;</span>
-          <h2 className='font-bold text-white'>About</h2>
+        <div className="hidden md:block">
+          <div className='absolute bottom-2 right-5 flex flex-row items-center bg-[#3938388e] px-4 rounded-md'>
+            <h2 className='font-bold text-white'>Home</h2>
+            <span className='font-bold text-white  text-2xl mx-2'>&#8594;</span>
+            <h2 className='font-bold text-white'>About</h2>
+          </div>
         </div>
       </div>
 
