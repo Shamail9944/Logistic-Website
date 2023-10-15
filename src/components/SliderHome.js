@@ -47,22 +47,22 @@ export default function SliderHome() {
     <div className="w-full">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
-          <div className='relative flex justify-center md:items-center items-start w-screen h-[89vh]'>
+          <div className='relative flex justify-center md:items-center items-start w-screen h-[76vh]'>
             <SliderVid />
             <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
-              <h1 className='text-white font-bold text-4xl md:text-6xl'>We are Ask</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>We are Ask</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl'>Someday Couriers</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center'>Someday Couriers</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     ABOUT US
                   </button>
                 </Link>
                 <span className='mx-10 text-2xl font-bold'>or</span>
                 <Link href="/quotation">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     GET QUOTE
                   </button>
                 </Link>
@@ -71,7 +71,7 @@ export default function SliderHome() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='relative flex justify-center md:items-center items-start w-screen h-[89vh]'>
+          <div className='relative flex justify-center md:items-center items-start w-screen h-[76vh]'>
             <Image
               src="/slider/1.jpg"
               fill={true}
@@ -81,19 +81,19 @@ export default function SliderHome() {
               style={{ objectFit: "cover" }}
             />
             <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
-              <h1 className='text-white font-bold text-4xl md:text-6xl'>What we do</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>What we do</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl'>Nationwide and Europe-wide Courier Service</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center'>Nationwide and Europe-wide Courier Service</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     ABOUT US
                   </button>
                 </Link>
                 <span className='mx-10 text-2xl font-bold'>or</span>
                 <Link href="/quotation">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     GET QUOTE
                   </button>
                 </Link>
@@ -102,7 +102,7 @@ export default function SliderHome() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='relative flex justify-center md:items-center items-start w-screen h-[89vh]'>
+          <div className='relative flex justify-center md:items-center items-start w-screen h-[76vh]'>
             <Image
               src="/slider/2.jpg"
               fill={true}
@@ -112,19 +112,19 @@ export default function SliderHome() {
               style={{ objectFit: "cover" }}
             />
             <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
-              <h1 className='text-white font-bold text-4xl md:text-6xl'>Our Transport</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>Our Transport</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl'>We have vehicles for all your needs</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center'>We have vehicles for all your needs</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     ABOUT US
                   </button>
                 </Link>
                 <span className='mx-10 text-2xl font-bold'>or</span>
                 <Link href="/quotation">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     GET QUOTE
                   </button>
                 </Link>
@@ -133,7 +133,7 @@ export default function SliderHome() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='relative flex justify-center md:items-center items-start w-screen h-[89vh]'>
+          <div className='relative flex justify-center md:items-center items-start w-screen h-[76vh]'>
             <Image
               src="/slider/3.jpg"
               fill={true}
@@ -143,19 +143,19 @@ export default function SliderHome() {
               style={{ objectFit: "cover" }}
             />
             <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
-              <h1 className='text-white font-bold text-4xl md:text-6xl'>Our Partners</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>Our Partners</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl'>We work with UK and International Logistics companies</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center'>We work with UK and International Logistics companies</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     ABOUT US
                   </button>
                 </Link>
                 <span className='mx-10 text-2xl font-bold'>or</span>
                 <Link href="/quotation">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     GET QUOTE
                   </button>
                 </Link>
@@ -166,22 +166,22 @@ export default function SliderHome() {
       </Swiper>
       {/* {data.map((each, index) => {
         data.type === "video" ? (
-          <div key={index} className='relative flex justify-center md:items-center items-start w-screen h-[89vh]'>
+          <div key={index} className='relative flex justify-center md:items-center items-start w-screen h-[76vh]'>
             <ReactPlayer url={data.bg} />
             <div className='absolute flex flex-col items-center'>
-              <h1 className='text-white font-bold text-4xl md:text-6xl'>{data.heading}</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>{data.heading}</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl'>{data.para}</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center'>{data.para}</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     ABOUT US
                   </button>
                 </Link>
                 <span className='mx-10 text-2xl font-bold'>or</span>
                 <Link href="/quotation">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     GET QUOTE
                   </button>
                 </Link>
@@ -189,7 +189,7 @@ export default function SliderHome() {
             </div>
           </div>
         ) : (
-          <div key={index} className='relative flex justify-center md:items-center items-start w-screen h-[89vh]'>
+          <div key={index} className='relative flex justify-center md:items-center items-start w-screen h-[76vh]'>
             <Image
               src={data.bg}
               fill={true}
@@ -199,19 +199,19 @@ export default function SliderHome() {
               style={{ objectFit: "cover" }}
             />
             <div className='absolute flex flex-col items-center'>
-              <h1 className='text-white font-bold text-4xl md:text-6xl'>{data.heading}</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>{data.heading}</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl'>{data.para}</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center'>{data.para}</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     ABOUT US
                   </button>
                 </Link>
                 <span className='mx-10 text-2xl font-bold'>or</span>
                 <Link href="/quotation">
-                  <button className='btn rounded-md border border-white/50 w-[250px] h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-xl md:text-md tracking-widest text-white'>
+                  <button className='btn rounded-md border border-white/50 w-[200px] h-[40px] md:w-[250px] md:h-[50px] px-4 flex items-center justify-center overflow-hidden font-bold text-lg md:text-md tracking-widest text-white'>
                     GET QUOTE
                   </button>
                 </Link>
