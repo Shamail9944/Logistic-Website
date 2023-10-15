@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.react-player > video {
+  position: absolute;
+  object-fit: cover;
+}

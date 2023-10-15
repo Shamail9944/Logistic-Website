@@ -49,8 +49,8 @@ export default function SliderHome() {
         <SwiperSlide>
           <div className='relative flex justify-center md:items-center items-start w-screen h-[89vh]'>
             <SliderVid />
-            <div className='absolute flex flex-col items-center'>
-              <h1 className='text-white font-bold text-8xl'>We are Ask</h1>
+            <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>We are Ask</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
               <p className='mt-10 text-white font-semibold text-3xl'>Someday Couriers</p>
 
@@ -81,7 +81,7 @@ export default function SliderHome() {
               style={{ objectFit: "cover" }}
             />
             <div className='absolute flex flex-col items-center'>
-              <h1 className='text-white font-bold text-8xl'>What we do</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>What we do</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
               <p className='mt-10 text-white font-semibold text-3xl'>Nationwide and Europe-wide Courier Service</p>
 
@@ -112,7 +112,7 @@ export default function SliderHome() {
               style={{ objectFit: "cover" }}
             />
             <div className='absolute flex flex-col items-center'>
-              <h1 className='text-white font-bold text-8xl'>Our Transport</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>Our Transport</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
               <p className='mt-10 text-white font-semibold text-3xl'>We have vehicles for all your needs</p>
 
@@ -143,7 +143,7 @@ export default function SliderHome() {
               style={{ objectFit: "cover" }}
             />
             <div className='absolute flex flex-col items-center'>
-              <h1 className='text-white font-bold text-8xl'>Our Partners</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>Our Partners</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
               <p className='mt-10 text-white font-semibold text-3xl'>We work with UK and International Logistics companies</p>
 
@@ -169,7 +169,7 @@ export default function SliderHome() {
           <div key={index} className='relative flex justify-center md:items-center items-start w-screen h-[89vh]'>
             <ReactPlayer url={data.bg} />
             <div className='absolute flex flex-col items-center'>
-              <h1 className='text-white font-bold text-8xl'>{data.heading}</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>{data.heading}</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
               <p className='mt-10 text-white font-semibold text-3xl'>{data.para}</p>
 
@@ -199,7 +199,7 @@ export default function SliderHome() {
               style={{ objectFit: "cover" }}
             />
             <div className='absolute flex flex-col items-center'>
-              <h1 className='text-white font-bold text-8xl'>{data.heading}</h1>
+              <h1 className='text-white font-bold text-6xl md:text-8xl'>{data.heading}</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
               <p className='mt-10 text-white font-semibold text-3xl'>{data.para}</p>
 
