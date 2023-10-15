@@ -18,7 +18,7 @@ export default function MainHeaderPri() {
 
         <div className="flex lg:flex-1 pl-2">
           <Link href="/" className="-m-3 p-1 flex flex-row gap-x-3">
-            <Image className="w-full py-3" src="/logo.png" height={100} width={100} alt="logo" />
+            <Image className="w-full py-3" src="/logo.png" height={100} width={75} alt="logo" />
           </Link>
         </div>
 

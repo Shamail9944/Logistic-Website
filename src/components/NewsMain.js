@@ -14,14 +14,14 @@ const news = [
     title: "FEDEX TNT ACQUISITION",
     headline: "Combining forces to give your business even more power. The FedEx integration of TNT is making solid progress.",
     articlecontext: "Combining forces to give your business even more power.The FedEx integration of TNT is making solid progress. With the combination of our networks, you now have access to a robust portfolio of FedEx services and solutions to help you grow your business.",
-    articlearticleImg: ""
+    articlearticleImg: "https://asksamedaycouriers.co.uk/cmsbo/wp-content/uploads/2018/11/connect-infographic.jpg"
   },
   {
     img: "/network.jpg",
     postBy: "ASK Sameday Couriers",
     cat: "Industry News",
     date: "14th November 2018",
-    title: "FEDEX TNT ACQUISITION",
+    title: "UNPACKING THE DEMAND OF THE UK COURIER",
     headline: "Combining forces to give your business even more power. The FedEx integration of TNT is making solid progress. With the combination of our networks, you now have access to a robust portfolio of ",
     articlecontext: "Combining forces to give your business even more power.The FedEx integration of TNT is making solid progress. With the combination of our networks, you now have access to a robust portfolio of FedEx services and solutions to help you grow your business.",
     articlearticleImg: ""
