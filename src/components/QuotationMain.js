@@ -62,10 +62,15 @@ export default function QuotationMain() {
   return (
     <div className='bg-[#FFFFFF] w-full'>
 
-      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-0 py-4 lg:py-8'>
+      <div className='relative bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-0 py-4 lg:py-8'>
         <div className='justify-start'>
           <h2 className='font-bold'>QUOTATION</h2>
           <p>Complete our secure quotation form and we will get to you with a price</p>
+        </div>
+        <div className='absolute bottom-2 right-5 flex flex-row items-center bg-[#3938388e] px-4 rounded-md'>
+          <h2 className='font-bold text-white'>Home</h2>
+          <span className='font-bold text-white  text-2xl mx-2'>&#8594;</span>
+          <h2 className='font-bold text-white'>Quotation</h2>
         </div>
       </div>
       <div className='bg-[#DBE0D8]'>

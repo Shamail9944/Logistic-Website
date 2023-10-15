@@ -7,18 +7,15 @@ export default function NetworkMain() {
     <div className='bg-[#FFFFFF] w-full'>
 
 
-      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-0 py-4 lg:py-8'
-      // style={{
-      //   backgroundImage: `url(/network-banner.jpg)`,
-      //   backgroundSize: "cover",
-      //   backgroundRepeat: "no-repeat",
-      //   width: "100vw",
-      //   height: "100vh"
-      // }}
-      >
+      <div className='bg-[#FFFFFF] max-w-5xl text-black mx-auto flex items-start justify-start px-6 lg:px-0 py-4 lg:py-8 relative'      >
         <div className='justify-start'>
           <h2 className='font-bold'>NETWORK</h2>
           <p>Our success is based on delivering on time and utilising global logistics companies to meet demands</p>
+        </div>
+        <div className='absolute bottom-2 right-5 flex flex-row items-center bg-[#3938388e] px-4 rounded-md'>
+          <h2 className='font-bold text-white'>Home</h2>
+          <span className='font-bold text-white  text-2xl mx-2'>&#8594;</span>
+          <h2 className='font-bold text-white'>Network</h2>
         </div>
       </div>
 

@@ -9,18 +9,23 @@ export default function FleetMain() {
     <div className=' w-full bg-[#CCCCCC]'>
 
 
-      <div className='max-w-8xl text-black mx-auto flex items-start justify-start px-6 lg:px-4 py-4 lg:py-8'
+      <div className='relative max-w-8xl text-black mx-auto flex items-start justify-start px-6 lg:px-4 py-4 lg:py-8'
         style={{
           backgroundImage: "url(fleet-header.jpg)",
           backgroundPosition: "bottom",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          width: "80%",
+          width: "90%",
           height: "auto",
         }}>
         <div className='justify-start'>
           <h2 className='font-bold'>FLEET</h2>
           <p>From small vans to long wheel based - we have the fleet to meet your needs</p>
+        </div>
+        <div className='absolute bottom-2 right-5 flex flex-row items-center bg-[#3938388e] px-4 rounded-md'>
+          <h2 className='font-bold text-white'>Home</h2>
+          <span className='font-bold text-white  text-2xl mx-2'>&#8594;</span>
+          <h2 className='font-bold text-white'>Fleet</h2>
         </div>
       </div>
 
