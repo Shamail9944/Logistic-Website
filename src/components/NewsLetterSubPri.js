@@ -43,7 +43,7 @@ export default function NewsLetterSubPri() {
     } catch (error) {
       setStatus(500);
       setMessage("Unable to Subscribe. Please reach us out through other contacts provided.");
-      setTimeout(() => { setMessage(""); setButtonDisabled(false); }, 2000);
+      setTimeout(() => { setMessage(""); setButtonDisabled(false); }, 6000);
     }
   }
 
