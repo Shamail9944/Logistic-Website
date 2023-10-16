@@ -73,10 +73,10 @@ export default function FooterPri() {
       <div className='w-full bg-[#6C0287] '>
         <div className="mx-auto max-w-6xl flex flex-col items-center px-6 lg:px-4 py-1 lg:py-2 justify-between text-gray-300">
           <div className='flex gap-x-5 mb-4 text-center text-xs'>
-            <p>©2022 XXX Couriers Ltd. All Rights Reserved. Registered in XXX & XXX Company Reg. No. XXXXXXXX</p>
+            <p>©2023 XXX Couriers Ltd. All Rights Reserved. Registered in XXX & XXX Company Reg. No. XXXXXXXX</p>
           </div>
           <div className='flex lg:justify-end text-sm'>
-            <div className="flex flex-col md:flex-row gap-x-[2.75rem] items-center">
+            <div className="flex flex-row gap-x-[2.75rem] items-center">
               <Link target="_blank" href={'https://www.instagram.com//'} className="hover:text-accent transition-all duration-300"><p>Privacy</p></Link>
               <Link target="_blank" href={'https://www.twitter.com//'} className="hover:text-accent transition-all duration-300"><p>Legal</p></Link>
               <Link target="_blank" href={'https://www.youtube.com//'} className="hover:text-accent transition-all duration-300 font-bold"><p>Made by SamDevPk</p></Link>

@@ -83,7 +83,7 @@ export default function QuotationMain() {
             <div className='border-2 border-solid border-[#FDAF17] px-6 py-4 rounded-lg my-4'>
               <form className='flex flex-col gap-1 w-full mx-auto'
                 onSubmit={sendMail}>
-                <div className=''>
+                <div className='flex justify-center'>
                   <h2 className='text-2xl font-semibold'>QUICK QUOTE</h2>
                 </div>
                 <div className='bg-[#FDAF17] h-1'></div>
