@@ -18,7 +18,7 @@ export default function FleetMain() {
           width: "90%",
           height: "auto",
         }}>
-        <div className='justify-start'>
+        <div className='justify-start max-w-[15rem] md:max-w-8xl'>
           <h2 className='font-bold'>FLEET</h2>
           <p>From small vans to long wheel based - we have the fleet to meet your needs</p>
         </div>
