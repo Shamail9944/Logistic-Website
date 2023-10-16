@@ -153,7 +153,7 @@ export default function QuotationMain() {
                 <div>
                   <h2 className='text-2xl font-semibold mt-12'>Verification Code</h2>
                   <div className='bg-[#FDAF17] '></div>
-                  <div className='flex flex-row justify-between w-full'>
+                  <div className='flex flex-col md:flex-row justify-between items-center w-full'>
                     <input
                       name='code'
                       id='code'
@@ -165,9 +165,8 @@ export default function QuotationMain() {
                       onChange={(e) => { setCode(e.target.value); }} />
 
                     <button
-                      className='btn rounded-full border font-bold bg-[#FDAF17] max-w-[170px] px-8 mt-5  flex items-center justify-center overflow-hidden hover:border-accent group'
+                      className='btn rounded-full border font-bold bg-[#FDAF17] w-[220px] h-[40px] px-8 mt-5  flex items-center justify-center overflow-hidden hover:border-accent group'
                       type="submit">
-
                       <span className='group:hover:-translate-y-[120%] group:hover:opacity-0 transition-all duration-500'>Submit</span>
                     </button>
                   </div>
