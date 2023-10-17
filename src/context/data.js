@@ -16,14 +16,14 @@ export const footerLinks = [
             { title: "XXX Couriers Pvt Ltd", url: "" },
             { title: "Tel - XXXX XXXXXXX", url: "" },
             { title: "Cell - XXXX XXXXXXX", url: "" },
-            { title: "info@XXXCouriers.co.uk", url: "" },
+            { title: "info@VivoCouriers.co.uk", url: "" },
             { title: "quotes@XXXCouriers.co.uk", url: "" },
         ]
     },
 ]
 export const news = [
     {
-        id:"1",
+        id: "1",
         img: "",
         postBy: "ASK Sameday Couriers",
         cat: "Industry News",
@@ -38,7 +38,7 @@ export const news = [
         ],
     },
     {
-        id:"2",
+        id: "2",
         img: "",
         postBy: "ASK Sameday Couriers",
         cat: "Industry News",
@@ -53,7 +53,7 @@ export const news = [
         ],
     },
     {
-        id:"3",
+        id: "3",
         img: "",
         postBy: "ASK Sameday Couriers",
         cat: "Industry News",
@@ -68,7 +68,7 @@ export const news = [
         ],
     },
     {
-        id:"4",
+        id: "4",
         img: "",
         postBy: "ASK Sameday Couriers",
         cat: "Industry News",

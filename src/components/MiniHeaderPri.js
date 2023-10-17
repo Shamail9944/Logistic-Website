@@ -20,7 +20,7 @@ export default function MiniHeaderPri() {
           </div>
           <div className="flex flex-row gap-x-2">
             <SlEnvolopeLetter className='text-[#FDAF17] text-lg' />
-            <p className="hover:text-[#FDAF17] transition-all duration-300">info@XXXCouriers.co.uk</p>
+            <p className="hover:text-[#FDAF17] transition-all duration-300">info@VivoCouriers.co.uk</p>
           </div>
         </div>
         <div className='flex gap-x-5 lg:justify-end'>

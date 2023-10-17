@@ -30,3 +30,14 @@ body {
   position: absolute;
   object-fit: cover;
 }
+
+.swiper-button-next { 
+  color: white !important ;
+  margin-inline: 30px !important; 
+  font-weight: 900 !important; 
+}
+.swiper-button-prev { 
+  color: white !important ;
+  margin-inline: 30px !important;
+  font-weight: 900 !important; 
+}

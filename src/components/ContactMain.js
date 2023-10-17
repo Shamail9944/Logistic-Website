@@ -91,7 +91,7 @@ export default function ContactMain() {
         <div className=' flex flex-col md:flex-row gap-x-12 mt-6 max-w-5xl text-center'>
 
           <div className='lg:flex-1 text-xs flex flex-col items-center'>
-            <h2 className='font-bold'>CONTACT BY EMAIL</h2>
+            <h2 className='font-bold text-lg'>CONTACT BY EMAIL</h2>
             <p>If you have a general query about our business services, simply complete the form below and we will endeavour to respond within 1 business working day.</p>
 
             <div className='w-full border-2 border-solid border-[#FDAF17] px-6 py-4 rounded-lg my-4'>
@@ -173,7 +173,7 @@ export default function ContactMain() {
           </div>
 
           <div className='lg:flex-1 text-xs flex flex-col items-center'>
-            <h2 className='font-bold'>CONTACT BY SOCIAL MEDIA</h2>
+            <h2 className='font-bold text-lg'>CONTACT BY SOCIAL MEDIA</h2>
             <p>You can also communicate through our social media platforms. You can send us a message via facebook messenger by clicking the icon at the bottom right or alternatively you can send a direct message via twitter, instagram or snapchat.</p>
 
             <div className='flex flex-col md:flex-row text-xs items-center gap-x-4 mt-5'>
@@ -196,7 +196,7 @@ export default function ContactMain() {
               <Link href="/">
                 <button className='btn rounded-full border border-white/50 max-w-[400px] h-[30px] px-8 flex items-center justify-center overflow-hidden hover:border-accent group bg-[#37ABED] text-sm text-white gap-x-2'>
                   <BiLogoTwitter className='text-2xl' />
-                  <span>Tweet to @XXX Couriers</span>
+                  <span>Tweet to @Vivo-Incoporations-Ltd</span>
                 </button>
               </Link>
             </div>

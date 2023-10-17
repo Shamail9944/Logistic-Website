@@ -17,7 +17,7 @@ export default function FooterPri() {
             <path d="M8.25 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM15.75 6.75a.75.75 0 00-.75.75v11.25c0 .087.015.17.042.248a3 3 0 015.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 00-3.732-10.104 1.837 1.837 0 00-1.47-.725H15.75z" />
             <path d="M19.5 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
           </svg>
-          <p className="self-center md:self-start text-4xl font-bold text-[#6C0287]"><span className='text-[#FDAF17]'>XXX <br /></span> Courier</p>
+          <p className="self-center md:self-start text-4xl font-bold text-[#6C0287]"><span className='text-[#FDAF17]'>Vivo <br /></span> Courier</p>
         </div>
         <div className="flex flex-col lg:flex-1 mt-5 items-start md:items-start">
           <h3 className='font-bold text-xl md:text-2xl mb-2'>Navigate</h3>
@@ -30,11 +30,11 @@ export default function FooterPri() {
         </div>
         <div className="flex flex-col lg:flex-1 mt-5 items-start">
           <h3 className='font-bold text-xl md:text-2xl mb-2'>Connect</h3>
-          <Link href="/" className='font-normal text-xs mt-2 hover:text-[#6C0287] text-gray-600'>XXX Couriers Pvt Ltd</Link>
+          <Link href="/" className='font-normal text-xs mt-2 hover:text-[#6C0287] text-gray-600'>Vivo Incoporations Ltd</Link>
           <Link href="/" className='font-normal text-xs mt-2 hover:text-[#6C0287] text-gray-600'>Tel - XXXX XXXXXXX</Link>
           <Link href="/" className='font-normal text-xs mt-2 hover:text-[#6C0287] text-gray-600'>Cell - XXXX XXXXXXX</Link>
-          <Link href="/" className='font-normal text-xs mt-2 hover:text-[#6C0287] text-gray-600'>info@XXXCouriers.co.uk</Link>
-          <Link href="/" className='font-normal text-xs mt-2 hover:text-[#6C0287] text-gray-600'>quotes@XXXCouriers.co.uk</Link>
+          <Link href="/" className='font-normal text-xs mt-2 hover:text-[#6C0287] text-gray-600'>info@VivoCouriers.co.uk</Link>
+          <Link href="/" className='font-normal text-xs mt-2 hover:text-[#6C0287] text-gray-600'>quotes@VivoCouriers.co.uk</Link>
           <div className='flex flex-row gap-x-4 mt-6 text-4xl text-[#6C0287]'>
             <Link target="_blank" href={'https://www.fb.com//'} className="text-5xl md:text-3xl hover:text-accent transition-all duration-300"><BiLogoFacebook /></Link>
             <Link target="_blank" href={'https://www.instagram.com//'} className="text-5xl md:text-3xl hover:text-accent transition-all duration-300"><AiOutlineInstagram /></Link>
@@ -73,7 +73,7 @@ export default function FooterPri() {
       <div className='w-full bg-[#6C0287] '>
         <div className="mx-auto max-w-6xl flex md:flex-row flex-col items-center px-6 lg:px-4 py-1 lg:py-2 justify-between text-gray-300">
           <div className='flex gap-x-5 mb-4 lg:mb-0 text-center text-xs'>
-            <p>©2023 XXX Couriers Ltd. All Rights Reserved. Registered in XXX & XXX Company Reg. No. XXXXXXXX</p>
+            <p>©2023 Vivo Incoporations ltd. All Rights Reserved.</p>
           </div>
           <div className='flex lg:justify-end text-sm'>
             <div className="flex flex-col md:flex-row gap-y-2 gap-x-0 md:gap-x-4 items-center">
