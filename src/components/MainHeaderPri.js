@@ -39,7 +39,7 @@ export default function MainHeaderPri() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md py-[42px] text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -87,7 +87,7 @@ export default function MainHeaderPri() {
                 <path d="M8.25 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM15.75 6.75a.75.75 0 00-.75.75v11.25c0 .087.015.17.042.248a3 3 0 015.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 00-3.732-10.104 1.837 1.837 0 00-1.47-.725H15.75z" />
                 <path d="M19.5 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
               </svg>
-              <p className="self-center font-bold text-white"><span className='text-[#FDAF17] '>XXX <br /></span> Courier</p>
+              <p className="self-center font-bold text-white"><span className='text-[#FDAF17] '>Vivo <br /></span> Courier</p>
 
             </Link>
             <button

@@ -52,7 +52,7 @@ export default function SliderHome() {
             <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
               <h1 className='text-white font-bold text-6xl md:text-8xl'>We are Ask</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl text-center'>Someday Couriers</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center  px-14'>Someday Couriers</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
@@ -83,7 +83,7 @@ export default function SliderHome() {
             <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
               <h1 className='text-white font-bold text-6xl md:text-8xl'>What we do</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl text-center'>Nationwide and Europe-wide Courier Service</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center  px-14'>Nationwide and Europe-wide Courier Service</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
@@ -114,7 +114,7 @@ export default function SliderHome() {
             <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
               <h1 className='text-white font-bold text-6xl md:text-8xl'>Our Transport</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl text-center'>We have vehicles for all your needs</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center  px-14'>We have vehicles for all your needs</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
@@ -145,7 +145,7 @@ export default function SliderHome() {
             <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
               <h1 className='text-white font-bold text-6xl md:text-8xl'>Our Partners</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl text-center'>We work with UK and International Logistics companies</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center  px-14'>We work with UK and International Logistics companies</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
@@ -171,7 +171,7 @@ export default function SliderHome() {
             <div className='absolute flex flex-col items-center'>
               <h1 className='text-white font-bold text-6xl md:text-8xl'>{data.heading}</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl text-center'>{data.para}</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center  px-14'>{data.para}</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
@@ -201,7 +201,7 @@ export default function SliderHome() {
             <div className='absolute flex flex-col items-center'>
               <h1 className='text-white font-bold text-6xl md:text-8xl'>{data.heading}</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-xl text-center'>{data.para}</p>
+              <p className='mt-10 text-white font-semibold text-xl text-center  px-14'>{data.para}</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">

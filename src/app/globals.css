@@ -33,11 +33,11 @@ body {
 
 .swiper-button-next { 
   color: white !important ;
-  margin-inline: 30px !important; 
+  margin-inline: 10px !important; 
   font-weight: 900 !important; 
 }
 .swiper-button-prev { 
   color: white !important ;
-  margin-inline: 30px !important;
+  margin-inline: 10px !important;
   font-weight: 900 !important; 
 }
