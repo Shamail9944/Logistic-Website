@@ -52,7 +52,7 @@ export default function SliderHome() {
             <div className='absolute flex flex-col items-center justify-center w-[100%] h-[100%]'>
               <h1 className='text-white font-bold text-3xl md:text-8xl'>We are Ask</h1>
               <span className='mt-10 h-[5px] w-[100px] bg-[#fdaf17]'></span>
-              <p className='mt-10 text-white font-semibold text-md md;text-xl text-center  px-14'>Someday Couriers</p>
+              <p className='mt-10 text-white font-semibold text-md md;text-xl text-center  px-14'>Vivo Couriers</p>
 
               <div className='flex flex-col md:flex-row mt-10 items-center'>
                 <Link href="/about">
