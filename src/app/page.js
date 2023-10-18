@@ -4,7 +4,7 @@ import SliderHome from '@/components/SliderHome'
 import SpecialitySection from '@/components/SpecialitySection'
 
 export const metadata = {
-  title: 'ASK Someday - Home',
+  title: 'Vivo Courier - Home',
   description: 'Get delivery services at door steps',
 }
 

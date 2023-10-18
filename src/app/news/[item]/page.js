@@ -3,6 +3,12 @@ import { news } from '@/components/NewsMain'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
+
+export const metadata = {
+    title: 'Vivo Courier - News',
+    description: 'Important updates from Industry',
+}
+
 const page = ({ params }) => {
     const XId = params.item
     // console.log(XId)
