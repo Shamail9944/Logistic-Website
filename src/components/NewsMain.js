@@ -81,20 +81,20 @@ export default function NewsMain() {
       <div className='bg-[#FFFFFF] text-black mx-auto max-w-5xl flex flex-col items-start px-6 lg:px-4 py-4 lg:py-1 justify-between'>
         {news.map((item, index) => {
           return (
-            <div key={index} className='flex flex-col'>
+            <div key={index} className='flex flex-col items-center'>
               <Image
                 src={item.img}
-                width={1200}
-                height={500}
+                width={800}
+                height={300}
                 alt="Warehouse"
                 className='mb-4 z-[20]'
               />
-              <div className='flex flex-col md:flex-row mt-10'>
+              <div className='flex flex-col md:flex-row mt-1'>
                 <div className='mr-5 my-5 text-4xl text-slate-600'><BiShareAlt /></div>
                 <div>
-                  <p className='mb-5 text-black'>By {item.postBy} In {item.cat} Posted {item.date}</p>
-                  <h2 className='mb-5  text-2xl font-bold text-[#6C0287]'>{item.title}</h2>
-                  <p className='mb-5 text-black'>{item.headline}</p>
+                  <p className='mb-2 text-black'>By {item.postBy} In {item.cat} Posted {item.date}</p>
+                  <h2 className='mb-2  text-2xl font-bold text-[#6C0287]'>{item.title}</h2>
+                  <p className='mb-2 text-black'>{item.headline}</p>
 
                   <div className='flex justify-start pb-8'>
                     <BtnNews item={item} />

@@ -10,6 +10,7 @@ export default function IndustryNews() {
         <div className='max-w-7xl text-center self-center'>
           <h2 className='text-xl md:text-3xl font-bold'>INDUSTRY NEWS</h2>
           <div className='flex flex-col md:flex-row gap-x-4 mt-6'>
+            {/* news 1 */}
             <div className="max-w-sm rounded overflow-hidden mt-5 shadow-lg">
               <Image className="w-full" src="/news/news-1.jpg" height={250} width={200} alt="Sunset in the mountains" />
 
@@ -26,6 +27,7 @@ export default function IndustryNews() {
               </div>
 
             </div>
+            {/* news 2 */}
             <div className="max-w-sm rounded overflow-hidden mt-5 shadow-lg">
               <Image className="w-full" src="/news/news-2.jpg" height={250} width={200} alt="Sunset in the mountains" />
               <div className="px-6 py-4">
@@ -40,6 +42,7 @@ export default function IndustryNews() {
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#COURIER</span>
               </div>
             </div>
+            {/* news 3 */}
             <div className="max-w-sm rounded overflow-hidden mt-5 shadow-lg">
               <Image className="w-full" src="/news/news-3.jpg" height={250} width={200} alt="Sunset in the mountains" />
               <div className="px-6 py-4">
@@ -54,6 +57,7 @@ export default function IndustryNews() {
                 <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#DELIVERY</span>
               </div>
             </div>
+            {/* news 4 */}
             <div className="max-w-sm rounded overflow-hidden mt-5 shadow-lg">
               <Image className="w-full" src="/news/news-4.png" height={250} width={200} alt="Sunset in the mountains" />
               <div className="px-6 py-4">

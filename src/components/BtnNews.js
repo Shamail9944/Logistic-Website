@@ -1,7 +1,7 @@
 'use client'
 import { useRouter } from 'next/navigation'
 import React from 'react'
-useRouter
+
 const BtnNews = ({ item }) => {
     const router = useRouter()
     function handleClick() {
